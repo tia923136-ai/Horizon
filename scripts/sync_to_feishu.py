@@ -53,7 +53,7 @@ def check_url_exists(token: str, url: str) -> bool:
         "page_size": 1,
         "filter": {
             "conjunction": "and",
-            "conditions": [{"field_name": "url", "operator": "is", "value": [url]}],
+            "conditions": [{"field_name": "url", "operator": "contains", "value": [url]}],
         },
     }
     data = json.dumps(body, ensure_ascii=False).encode("utf-8")
@@ -175,7 +175,7 @@ def main():
 
             fields = {
                 "title": item["title"][:100],
-                "url": item["url"],
+                "url": {"link": item["url"], "text": item["title"][:50]},
                 "summary": item["summary"],
                 "source": item["source"],
                 "author": item["author"],
