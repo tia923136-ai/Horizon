@@ -3,7 +3,7 @@
 sync_to_feishu.py — Horizon 采集结果同步到飞书统一表
 
 在 GitHub Actions 中运行，读取 docs/_posts/ 下当天的 summary markdown，
-提取标题、链接、评分，写入飞书统一表 tblPie8ayjpjWNuW。
+提取标题、链接、评分，写入飞书 Horizon 专属表，供 feedloop Hub 读取。
 
 无外部依赖，仅用 urllib。
 """
@@ -23,7 +23,7 @@ from typing import Optional
 APP_ID = os.environ.get("FEISHU_APP_ID", "")
 APP_SECRET = os.environ.get("FEISHU_APP_SECRET", "")
 BITABLE_APP_TOKEN = os.environ.get("FEISHU_BITABLE_APP_TOKEN", "GsUYbsjPgaQpVYsSJc7cMYFTnCd")
-TABLE_ID = os.environ.get("FEISHU_TABLE_ID", "tblPie8ayjpjWNuW")
+TABLE_ID = os.environ.get("HORIZON_TABLE_ID", "tblL8myOyTXq26OF")
 
 
 def get_token() -> Optional[str]:
@@ -53,7 +53,7 @@ def check_url_exists(token: str, url: str) -> bool:
         "page_size": 1,
         "filter": {
             "conjunction": "and",
-            "conditions": [{"field_name": "链接", "operator": "is", "value": [url]}],
+            "conditions": [{"field_name": "url", "operator": "is", "value": [url]}],
         },
     }
     data = json.dumps(body, ensure_ascii=False).encode("utf-8")
@@ -174,17 +174,14 @@ def main():
                 continue
 
             fields = {
-                "标题": item["title"][:100],
-                "链接": item["url"],
-                "摘要": item["summary"],
-                "来源": item["source"],
-                "来源工具": "Horizon",
-                "来源渠道": "feedloop",
-                "作者": item["author"],
-                "内容哈希": hashlib.md5(item["url"].encode()).hexdigest(),
+                "title": item["title"][:100],
+                "url": item["url"],
+                "summary": item["summary"],
+                "source": item["source"],
+                "author": item["author"],
+                "tags": "",
+                "score": item["score"],
                 "采集时间": int(datetime.now().timestamp() * 1000),
-                "状态": "待处理",
-                "AI评分": item["score"],
             }
 
             if write_record(token, fields):

@@ -38,6 +38,7 @@ jobs:
         env:
           FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          HORIZON_TABLE_ID: ${{ secrets.HORIZON_TABLE_ID }}
         run: python scripts/sync_to_feishu.py
 
       - name: Set current date as environment variable
