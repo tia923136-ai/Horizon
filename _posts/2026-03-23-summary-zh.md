@@ -5,259 +5,409 @@ date: 2026-03-23
 lang: zh
 ---
 
-> From 24 items, 11 important content pieces were selected
+> From 34 items, 17 important content pieces were selected
 
 ---
 
-1. [MIT 发布 2026 年流匹配与扩散模型课程，提供全面教育资源](#item-1) ⭐️ 8.0/10
-2. [阿里巴巴确认将持续开源 Qwen 和 Wan AI 模型。](#item-2) ⭐️ 8.0/10
-3. [MiniMax 宣布 M2.7 AI 模型将开源权重](#item-3) ⭐️ 8.0/10
-4. [ChatGPT 在没有标准工具的情况下，从十六进制数据手动解析并解压 .7z 文件](#item-4) ⭐️ 8.0/10
-5. [马斯克计划在 30 至 36 个月内将 AI 计算中心部署至太空。](#item-5) ⭐️ 8.0/10
-6. [Bram Cohen 提出基于 CRDT 的版本控制系统，实现无冲突合并。](#item-6) ⭐️ 7.0/10
-7. [AI 在推动编程创新和批判性思维方面的局限性](#item-7) ⭐️ 7.0/10
-8. [2026 年行业主导机器学习研究引发学术界相关性辩论](#item-8) ⭐️ 7.0/10
-9. [运行 9 张 RTX 3090 GPU 进行 AI 工作负载的实践见解](#item-9) ⭐️ 7.0/10
-10. [Qwen3.5-122B-A10B 无审查激进版本以 GGUF 格式发布，采用新型 K_P 量化](#item-10) ⭐️ 7.0/10
-11. [宇树科技计划 2026 年人形机器人出货量提升至 2 万台，进军家用市场挑战特斯拉](#item-11) ⭐️ 7.0/10
+1. [华为公布昇腾 AI 芯片三年路线图，含自研 HBM 的 950PR](#item-1) ⭐️ 8.0/10
+2. [毅力号火星车在火星地下发现古老河流三角洲](#item-2) ⭐️ 8.0/10
+3. [马斯克计划 30 至 36 个月内在太空部署 AI 计算中心](#item-3) ⭐️ 8.0/10
+4. [PC Gamer 的 RSS 推荐文章因广告膨胀下载超 500MB](#item-4) ⭐️ 7.0/10
+5. [《过山车大亨》优化技术深度解析](#item-5) ⭐️ 7.0/10
+6. [关于 CRDT 在版本控制系统中应用的辩论](#item-6) ⭐️ 7.0/10
+7. [开发者报告：AI 代码生成缺乏创新能力](#item-7) ⭐️ 7.0/10
+8. [NixOS 的声明式配置获个人用户高度赞誉](#item-8) ⭐️ 7.0/10
+9. [Project Nomad 推出离线知识服务器](#item-9) ⭐️ 7.0/10
+10. [Starlette 1.0 发布：ASGI 框架迎来稳定版本](#item-10) ⭐️ 7.0/10
+11. [PC Gamer 文章因自动播放广告导致严重网页臃肿问题曝光](#item-11) ⭐️ 7.0/10
+12. [JavaScript 沙箱技术对比研究](#item-12) ⭐️ 7.0/10
+13. [基于 CRDT 的版本控制合并状态可视化工具](#item-13) ⭐️ 7.0/10
+14. [Git 与 AI 编程代理的集成应用](#item-14) ⭐️ 7.0/10
+15. [宇树科技计划 2026 年生产 2 万台人形机器人，挑战特斯拉家用机器人市场](#item-15) ⭐️ 7.0/10
+16. [研究发现鸟类利用烟头筑巢驱虫并提升雏鸟健康](#item-16) ⭐️ 7.0/10
+17. [MiniMax 升级 Coding Plan 支持全模态模型，并宣布两周内发布 MiniMax 2.7 开源权重](#item-17) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [MIT 发布 2026 年流匹配与扩散模型课程，提供全面教育资源](https://www.reddit.com/r/MachineLearning/comments/1s0qi41/n_mit_flow_matching_and_diffusion_lecture_2026/) ⭐️ 8.0/10
+## [华为公布昇腾 AI 芯片三年路线图，含自研 HBM 的 950PR](https://t.me/zaihuapd/40431) ⭐️ 8.0/10
 
-Peter Holderrieth 和 Ezra Erives 发布了 MIT 的 2026 年流匹配与扩散模型课程，提供讲座视频、笔记和动手编码练习，涵盖理论、实践实现以及扩散变换器和离散扩散语言模型等新主题。该课程可在 https://diffusion.csail.mit.edu 获取，并包含对先前版本的改进，如扩展了潜在空间和语言模型构建的内容。 这门课程之所以重要，是因为它提供了 MIT 的高质量、易获取的教育资源，连接了现代生成式 AI 的理论基础和实践应用，帮助学生和专业人士跟上扩散变换器和离散扩散模型等前沿技术。它满足了 AI 图像、视频和蛋白质生成领域对熟练从业者日益增长的需求，促进了该领域的广泛采用和创新。 关键细节包括课程笔记可在 arXiv 获取（https://arxiv.org/abs/2506.02070），整合了扩散变换器和离散扩散语言模型等新主题，以及补充资源如流匹配指南（https://arxiv.org/pdf/2412.06264）和 Meta 的参考实现（https://github.com/facebookresearch/flow_matching）。该课程设计为数学上自包含，并为每个组件提供编码练习。
+华为轮值董事长徐直军在 2025 华为全连接大会上首次公布昇腾 AI 芯片三年路线图，包括采用自研 HBM 技术、2026 年 Q1 推出的 950PR 芯片，以及算力规模达 8192 卡的 Atlas 950 SuperPoD 超节点集群（2025 年 Q4 上市）。 这标志着华为在美国制裁下加速实现 AI 硬件自主化，其自研 HBM 技术和大规模计算集群将使其成为中国 AI 基础设施市场中英伟达的有力替代者。 950PR 将采用华为自研 HBM 技术，Atlas 950 SuperPoD 单个集群可扩展至 8192 个 NPU。后续规划还包括昇腾 960 和 970 芯片。
 
-reddit · r/MachineLearning · Benlus · Mar 22, 16:44
+telegram · zaihuapd · Mar 21, 14:18
 
-**背景**: 流匹配是一种用于建模概率流的机器学习框架，常用于生成任务以克服传统方法（如 MCMC）的扩展限制。扩散模型是一类生成模型，通过从噪声中迭代去噪来创建数据，扩散变换器（DiTs）用变换器替换 U-Net 主干，以提高图像生成的扩展性。离散扩散模型通过使用令牌序列的去噪策略，将这种方法扩展到语言生成，实现大型语言模型中的并行解码。
+**背景**: 昇腾芯片是华为对标英伟达 GPU 的 AI 加速器，其 910B 型号已在部分大语言模型任务中超越英伟达 A100。HBM（高带宽内存）对 AI 芯片性能至关重要，但此前主要由美光等国外供应商主导。SuperPoD 是华为机架级 AI 解决方案，类似英伟达 DGX 系统。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2508.15318v1">Flow Matching at Scale: A Machine Learning Framework for</a></li>
-<li><a href="https://arxiv.org/abs/2212.09748">[2212.09748] Scalable Diffusion Models with Transformers</a></li>
-<li><a href="https://arxiv.org/abs/2507.07050">[2507.07050] Discrete Diffusion Models for Language Generation</a></li>
+<li><a href="https://www.linkedin.com/pulse/huawei-claims-ai-chips-surpass-nvidias-a100-chinese-apps-tony-peng-vkjnc">Huawei Claims AI Chips Surpass Nvidia's A100, Chinese AI Apps...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High_Bandwidth_Memory">High Bandwidth Memory - Wikipedia</a></li>
+<li><a href="https://www.huawei.com/en/news/2026/3/mwc-superpod-ai">Huawei Unveiled the Latest SuperPoD, Making an AI ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#diffusion-models`, `#machine-learning`, `#educational-resources`, `#generative-ai`, `#mit`
+**标签**: `#AI Hardware`, `#Huawei`, `#Chip Design`, `#HBM`, `#High-Performance Computing`
 
 ---
 
 <a id="item-2"></a>
-## [阿里巴巴确认将持续开源 Qwen 和 Wan AI 模型。](https://i.redd.it/un4csg5odmqg1.png) ⭐️ 8.0/10
+## [毅力号火星车在火星地下发现古老河流三角洲](https://arstechnica.com/science/2026/03/perseverances-radar-revealed-ancient-subsurface-river-delta-on-mars/) ⭐️ 8.0/10
 
-阿里巴巴通过 ModelScope 的社交媒体帖子公开确认，将持续开源其 Qwen 和 Wan AI 模型的新版本。这一声明强化了其向公众发布先进 AI 技术的战略。 这一承诺具有重要意义，因为它提高了从一家大型科技公司获取先进 AI 模型的可及性，可能加速 AI/ML 生态系统的创新和采用。它还支持了开源 AI 的日益增长趋势，这可以民主化 AI 开发，降低研究人员和开发者的门槛。 Qwen 系列包括大语言模型（LLMs）和多模态模型，而 Wan 专注于 AI 视频生成，其模型如 T2V-1.3B 仅需 8.19 GB VRAM 即可在消费级 GPU 上运行。这些模型托管在 Hugging Face 和 ModelScope 等平台上，便于访问和部署。
+NASA 毅力号火星车利用 RIMFAX 探地雷达在火星杰泽罗陨石坑发现了一个可能埋藏于西部三角洲下方数十米处的古老地下河流三角洲。这些数据是毅力号在 2023 年 9 月至 2024 年 2 月穿越富含镁碳酸盐的 Margin 单元期间收集的，该区域可能保存有生命的化学痕迹。 这一发现可能极大推进在火星上寻找古代生命迹象的研究，因为河流三角洲是保存过去生命证据的理想场所。该发现还为理解火星数十亿年前的水文历史和宜居潜力提供了新见解。 RIMFAX 雷达探测到的地下分层结构表明存在三角洲构造，而 Margin 单元的镁碳酸盐沉积物已知在地球上可能保存生物特征。这些发现来自火星车五个月运行期间收集的雷达数据。
 
-reddit · r/LocalLLaMA · TKGaming_11 · Mar 22, 16:02
+telegram · zaihuapd · Mar 21, 16:18
 
-**背景**: Qwen 是阿里巴巴云开发的大语言模型系列，最初于 2023 年以通义千问的名义推出，基于 Meta 的 Llama 架构，参数范围从 1.8B 到 72B。Wan 是一个专注于视频生成模型的 AI 创意平台，旨在降低使用 AI 进行创意工作的门槛。ModelScope 是阿里巴巴的平台，汇集并提供各种 AI 模型的访问，包括来自阿里巴巴达摩院的模型，以促进包容性技术社区。
+**背景**: 毅力号于 2021 年降落在杰泽罗陨石坑，专门寻找古代生命迹象，因为该陨石坑曾经是一个湖泊。RIMFAX 是 NASA 火星车上首个探地雷达，能够揭示深度达 10 米的地下结构。镁碳酸盐对天体生物学特别重要，因为它们在地球的类似环境中可以保存有机物质长达数十亿年。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Qwen">Qwen - Wikipedia</a></li>
-<li><a href="https://www.artany.ai/models/wan-ai">Uncensored Wan Video: AI Video Generation Model By Wan AI |</a></li>
-<li><a href="https://modelscope.ai/">ModelScope</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RIMFAX">RIMFAX - Wikipedia</a></li>
+<li><a href="https://mars.nasa.gov/mars2020/mission/status/514/depositional-processes-of-the-margin-unit/">Depositional Processes of the Margin Unit - NASA Mars</a></li>
+<li><a href="https://science.nasa.gov/blog/reading-the-rocks-the-importance-of-the-margin-carbonate-unit-on-mars/">Reading the Rocks: The Importance of the Margin Carbonate Unit on Mars - NASA Science</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Open Source`, `#Machine Learning`, `#Alibaba`, `#LLM`
+**标签**: `#Mars`, `#Astrobiology`, `#NASA`, `#Space Exploration`, `#Geology`
 
 ---
 
 <a id="item-3"></a>
-## [MiniMax 宣布 M2.7 AI 模型将开源权重](https://i.redd.it/xobw2q1stlqg1.png) ⭐️ 8.0/10
+## [马斯克计划 30 至 36 个月内在太空部署 AI 计算中心](https://t.me/zaihuapd/40437) ⭐️ 8.0/10
 
-MiniMax 宣布其最近发布的专有大语言模型 M2.7 将开源权重，使更广泛的用户和开发者能够访问和开发。此前，该模型作为一款自进化的 AI 模型推出，专为代理框架和软件工程等任务设计。 此举可能显著提升 AI 生态系统的可访问性和创新性，使研究人员、开发者和公司能够在没有专有限制的情况下基于先进模型进行构建。这符合行业日益增长的开源权重模型趋势，该趋势在开放性与安全性和竞争问题之间寻求平衡。 M2.7 模型以其自进化能力著称，在专业软件工程和复杂代理任务方面表现出色，基准测试中有所体现。然而，此类开源权重模型因其公开可访问性而引发了关于安全风险和竞争影响的争论。
+埃隆·马斯克披露将在 30 至 36 个月内部署太空 AI 计算中心，指出太空太阳能效率是地面的 5 倍且无需电池储备。该计划还包括特斯拉/SpaceX 年产 100GW 太阳能电池、筹建 TeraFab 芯片工厂，以及将 Optimus 人形机器人年产量提升至 100 万台。 该计划有望突破地球能源限制和散热难题，重塑 AI 基础设施格局，同时推动太空工业化进程。其能源-芯片-机器人的整合方案或将改变全球制造业竞争格局，尤其是针对中国的制造优势。 太空太阳能强度达 1366W/m²（地面约 1000W/m²），因大气层吸收差异。TeraFab 工厂目标年产 1 太瓦 AI 算力，而第三代 Optimus 机器人旨在实现大规模劳动力自动化。
 
-reddit · r/LocalLLaMA · Few_Painter_5588 · Mar 22, 14:12
+telegram · zaihuapd · Mar 22, 02:24
 
-**背景**: MiniMax M2.7 是 MiniMax 推出的专有大语言模型，设计为自进化的 AI，通过现实世界交互进行改进，特别适用于 AI 代理和软件工程。开源权重 AI 模型指的是权重（参数）被公开发布的模型，介于完全开源和闭源方法之间，允许更广泛的使用，但通常对训练数据或代码保留一些限制。内容中的 'Composer 2-Flash' 一词似乎是一个幽默或不相关的引用，可能暗指其他 AI 工具如 Cursor 的 Composer 2，但与 M2.7 的宣布无直接关联。
+**背景**: 太空计算可规避大气层干扰（地球表面太阳能损耗达 55-60%），且通过晨昏轨道实现持续光照。类似项目如谷歌 Suncatcher 曾探索太空 AI 数据中心。TeraFab 是马斯克旗下公司（特斯拉/SpaceX/xAI）在芯片制造领域的垂直整合项目。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50">New MiniMax M2.7 proprietary AI model is 'self-evolving' and ...</a></li>
-<li><a href="https://zeeforcegaming.com/2025/04/01/openai-just-teased-a-new-open-weights-ai-model-heres-what-that-means/">OpenAI Just Teased a New ‘Open-Weights’ AI Model: Here’s</a></li>
+<li><a href="https://www.linkedin.com/posts/data-science-ml-hub_aigpu-datacenters-spacecomputing-activity-7409985407557365761-hNA_">AI Data Centers in Space : A New Frontier | Data Science... | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Terafab">Terafab - Wikipedia</a></li>
+<li><a href="https://www.solar.com/learn/space-based-solar-vs-conventional-solar-how-are-they-different/">Space-Based Solar vs. Conventional Solar - How Are They Different? | Solar.com</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Open Source`, `#Machine Learning`, `#Model Release`, `#Community`
+**标签**: `#AI`, `#SpaceTech`, `#RenewableEnergy`, `#Automation`, `#ElonMusk`
 
 ---
 
 <a id="item-4"></a>
-## [ChatGPT 在没有标准工具的情况下，从十六进制数据手动解析并解压 .7z 文件](https://old.reddit.com/r/ChatGPT/comments/1s06mg7/chatgpt_i_dont_have_7zip_installed_fine_ill) ⭐️ 8.0/10
+## [PC Gamer 的 RSS 推荐文章因广告膨胀下载超 500MB](https://stuartbreckenridge.net/2026-03-19-pc-gamer-recommends-rss-readers-in-a-37mb-article/) ⭐️ 7.0/10
 
-一个 Reddit 帖子展示了 ChatGPT 成功从原始十六进制数据中解析并解压 .7z 文件，尽管它无法使用 7Zip、tar、py7zr、apt-get 或互联网等标准工具。这一演示发生在一个受限环境中，AI 必须完全依赖其对 7z 文件格式和十六进制解析技术的内部知识。 这一事件凸显了 ChatGPT 在资源受限场景下的涌现问题解决能力，表明大型语言模型能够执行复杂、底层的任务，如手动文件格式解析，而无需外部依赖。它引发了关于 AI 自主性、LLM 处理超出典型文本生成的技术挑战的潜力，以及对未来 AI 在受限或离线环境中应用的讨论。 该过程涉及 ChatGPT 理解 7z 归档格式结构，包括头部和压缩算法，并将十六进制数据转换为二进制以手动提取文件。这是在没有任何预装软件或互联网访问的情况下实现的，完全依赖于模型的训练数据和推理能力。这一演示强调了模型以新颖、实用的方式应用技术知识的能力，但由于提示词和模型版本的变异性，可能无法在所有上下文中复现。
+PC Gamer 发布了一篇 37MB 的文章推荐 RSS 阅读器，但由于自动播放广告，该页面在 5 分钟内下载了超过 500MB 的数据，成为网页膨胀的典型案例。 这一事件凸显了网页膨胀日益严重的问题，过多的广告和跟踪脚本不仅降低了用户体验，还增加了数据消耗和页面加载时间，促使更多用户转向广告拦截工具和 RSS 替代方案。 初始文章大小为 37MB，但自动播放广告导致页面在几分钟内下载了超过 500MB 的数据。使用 Firefox 搭配 uBlock Origin 可将下载量减少至 5.6MB。
 
-reddit · r/LocalLLaMA · jinnyjuice · Mar 22, 14:10
+hackernews · JumpCrisscross · Mar 22, 18:23
 
-**背景**: 7z 文件格式是一种压缩归档格式，以高压缩比和支持多种算法而闻名，通常由 7-Zip 等工具或 py7zr 等库处理。十六进制数据解析涉及将十六进制表示（基数为 16）转换回二进制文件，这是一种用于底层编程和文件分析的技术。ChatGPT 是由 OpenAI 开发的大型语言模型，能够基于从海量数据集（包括技术文档和代码）中学到的模式生成文本。
+**背景**: RSS（简易信息聚合）是一种协议，用户可通过 Feedly 或 Inoreader 等阅读器订阅网站更新，避免臃肿的网页界面。网页膨胀指现代网站过度使用资源（数据、脚本、广告），通常导致性能下降。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/7z">7z - Wikipedia</a></li>
-<li><a href="https://py7zr.readthedocs.io/en/latest/archive_format.html">.7z format specification — py7zr – 7-zip archive library</a></li>
-<li><a href="https://onlinewebdevtools.com/hex-to-file">HEX to File Converter - DevTools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rss_reader">Rss reader</a></li>
+<li><a href="https://medium.com/hackernoon/web-bloat-isnt-a-knowledge-problem-46e561031663">Web bloat isn’t a knowledge problem | by Christian Heilmann | Medium</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论集中在辩论模型的能力上，一些用户对其执行手动十六进制解析和解压缩的能力表示惊讶，而其他人则质疑其可复现性以及是否需要特定的提示词或模型版本。讨论的见解包括关于实现此类壮举的提示工程技术，以及对 AI 在技术任务中自主性的担忧。
+**社区讨论**: 评论将 500MB 的数据消耗与 Windows 95 系统安装包（40MB）对比，并批评 PC Gamer 管理层允许此类膨胀问题。其他用户指出，uBlock Origin 等广告拦截工具可大幅减少加载体积，且许多网站存在类似问题。
 
-**标签**: `#AI`, `#ChatGPT`, `#problem-solving`, `#LLM`, `#reddit`
+**标签**: `#web-bloat`, `#RSS`, `#ad-blockers`, `#performance`, `#media`
 
 ---
 
 <a id="item-5"></a>
-## [马斯克计划在 30 至 36 个月内将 AI 计算中心部署至太空。](https://t.me/zaihuapd/40437) ⭐️ 8.0/10
+## [《过山车大亨》优化技术深度解析](https://larstofus.com/2026/03/22/the-gold-standard-of-optimization-a-look-under-the-hood-of-rollercoaster-tycoon/) ⭐️ 7.0/10
 
-马斯克宣布计划在 30 至 36 个月内将 AI 计算中心部署至太空，以利用太空更高的太阳能效率来克服地球的电力限制。他还概述了配套举措，包括特斯拉年产 100 GW 太阳能电池的目标、新建 250 亿美元的 TeraFab 芯片工厂，以及将 Optimus Gen 3 人形机器人年产量提升至 100 万台。 这一举措可能通过解决全球能源限制来革新 AI 基础设施，利用太空太阳能降低成本和环境影响。它标志着计算战略的重大转变，将太空技术与 AI 发展结合，以支持机器人和数据处理等行业的未来增长。 该计划依赖于太空太阳能效率，马斯克称其比地球高 5 倍且无需电池存储。然而，挑战包括在轨道上部署大规模基础设施的可行性，以及 30-36 个月的雄心时间表，可能面临技术和物流障碍。
+技术分析揭示了《过山车大亨》如何通过汇编语言编程和二次幂算术优化实现卓越性能，这些见解来自 OpenRCT2 重制项目。 这展示了历史优化技术对现代开发者仍具参考价值，证明了硬件感知编程能实现高级语言无法单独达到的性能。 游戏使用位移运算替代除法进行二次幂计算，这种技术在 OpenRCT2 代码库中仍然可见，尽管现代编译器理论上可以自动处理此类优化。
 
-telegram · zaihuapd · Mar 22, 02:24
+hackernews · mariuz · Mar 22, 19:02
 
-**背景**: 太空数据中心是提议在轨道上运行的计算机设施，利用不间断太阳能和自然冷却实现高效能运行，如维基百科和《科学美国人》等来源所述。TeraFab 是特斯拉和 SpaceX 宣布的 250 亿美元芯片工厂，目标为每年生产 2 纳米硅芯片和 1 太瓦 AI 计算能力，以支持先进 AI 系统。Optimus 是特斯拉正在开发的人形机器人，Gen 3 版本专为制造角色设计，其手部具有 22 个自由度以增强灵巧性。
+**背景**: 《过山车大亨》由 Chris Sawyer 主要使用 x86 汇编语言编写，实现了极致的硬件优化。OpenRCT2 作为开源重制项目，在保留这些优化的同时添加了现代功能。由于早期 CPU 除法运算缓慢，二次幂优化在 1990 年代游戏开发中很常见。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Space-based_data_center">Space-based data center - Wikipedia</a></li>
-<li><a href="https://www.teslarati.com/elon-musk-lanuches-terafab-tesla-spacexai-chip-factory/">Elon Musk launches TERAFAB: The $25B Tesla-SpaceXAI chip ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Optimus_(robot)">Optimus ( robot ) - Wikipedia</a></li>
+<li><a href="https://larstofus.com/2026/03/22/the-gold-standard-of-optimization-a-look-under-the-hood-of-rollercoaster-tycoon/">The gold standard of optimization: A look under the hood of RollerCoaster Tycoon – Larst Of Us</a></li>
+<li><a href="https://www.pcgamesn.com/rollercoaster-tycoon/code-chris-sawyer">RollerCoaster Tycoon: the best-optimised game of all time?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/History_of_compiler_construction">History of compiler construction - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI Infrastructure`, `#Space Technology`, `#Renewable Energy`, `#Elon Musk`, `#Computing`
+**社区讨论**: 评论者争论现代编译器是否消除了手动优化的必要性，有人指出编译器的改进，也有人认为特定情况仍需低级控制。多位用户将 RCT 的技术与《魔兽争霸》等使用类似方法的经典游戏进行比较。
+
+**标签**: `#optimization`, `#game-development`, `#performance`, `#assembly`, `#compilers`
 
 ---
 
 <a id="item-6"></a>
-## [Bram Cohen 提出基于 CRDT 的版本控制系统，实现无冲突合并。](https://bramcohen.com/p/manyana) ⭐️ 7.0/10
+## [关于 CRDT 在版本控制系统中应用的辩论](https://bramcohen.com/p/manyana) ⭐️ 7.0/10
 
-Bram Cohen 发表了一篇名为 'Manyana' 的提案，利用无冲突复制数据类型（CRDTs）重新构想版本控制系统，以实现永不失败的合并，引发了 216 条评论的技术讨论。 这很重要，因为它挑战了 Git 等传统版本控制范式，通过消除合并冲突可能简化分布式协作，从而影响软件工程工作流和开发者工具。 该提案基于 Cohen 在 2000 年代早期 Codeville 的工作，但批评者认为 CRDTs 通过避免冲突可能产生语义错误的代码，且系统处理语义问题的能力尚不明确。
+关于冲突自由复制数据类型(CRDTs)能否通过消除合并冲突来改进版本控制系统的讨论正在兴起，Bram Cohen 提出这种方法是一个根本性的解决方案，但由于用户体验问题尚未被广泛采用。 这场辩论很重要，因为版本控制是软件开发的基础，任何对合并冲突解决的改进都可能显著影响整个行业的开发人员生产力和协作工作流程。 CRDT 合并按定义总是成功，消除了传统冲突，但批评者认为这可能会掩盖开发人员应该手动解决的重要语义冲突。该提案建议 CRDT 可以在保持结果一致的同时提供更好的冲突描述。
 
 hackernews · c17r · Mar 22, 15:16
 
-**背景**: 像 Git 这样的版本控制系统跟踪软件代码的变更，合并不同版本时可能导致冲突，需要手动解决。CRDTs 是为分布式系统设计的数据结构，旨在无冲突地确保一致性，常用于多用户应用。该提案将 CRDTs 应用于版本控制以自动化合并，旨在提高协作开发的效率。
+**背景**: CRDTs(冲突自由复制数据类型)是用于分布式系统的数据结构，可以在多台计算机上复制并独立更新而无需协调，同时保证最终一致性。像 Git 这样的传统版本控制系统使用不同的合并策略，当更改重叠时可能导致冲突。当版本控制系统无法自动协调文件版本之间的差异时，就会发生合并冲突。
 
 <details><summary>参考链接</summary>
 <ul>
+<li><a href="https://algodaily.com/lessons/implementing-crdts-4faad348">AlgoDaily - Implementing CRDTs</a></li>
+<li><a href="https://bramcohen.com/p/manyana">A Coherent Vision for the Future of Version Control</a></li>
 <li><a href="https://crdt.tech/">About CRDTs • Conflict-free Replicated Data Types</a></li>
-<li><a href="https://arxiv.org/abs/1805.06358">[1805.06358] Conflict-free Replicated Data Types (CRDTs) - arXiv</a></li>
-<li><a href="https://www.atlassian.com/git/tutorials/what-is-version-control">What is version control | Atlassian Git Tutorial</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区情绪复杂，一些人赞扬这一创新能改善开发者体验，而另一些人则认为合并冲突对语义正确性至关重要，CRDTs 可能产生垃圾代码。关键观点包括对处理语义冲突的担忧，以及与 p4merge 等现有工具的比较。
+**社区讨论**: 社区意见分歧，一些人认为 CRDT 会通过自动解决应该手动处理的冲突而产生'垃圾代码'，而另一些人则看到了消除合并失败的潜力。几位评论者强调合并冲突经常揭示不应该自动解决的重要语义问题。还有人讨论重点是否应该是更好的合并工具而不是替换底层 VCS 架构。
 
-**标签**: `#version-control`, `#crdt`, `#software-engineering`, `#distributed-systems`, `#developer-tools`
+**标签**: `#version-control`, `#CRDTs`, `#git`, `#developer-tools`, `#merging`
 
 ---
 
 <a id="item-7"></a>
-## [AI 在推动编程创新和批判性思维方面的局限性](https://stevekrouse.com/precision) ⭐️ 7.0/10
+## [开发者报告：AI 代码生成缺乏创新能力](https://stevekrouse.com/precision) ⭐️ 7.0/10
 
-一篇文章认为，AI 虽然有助于自动化编码任务，但缺乏推动真正创新或批判性思维的能力，这得到了专家意见和用户经验的证实。例如，Chris Lattner 发现 AI 生成的编译器没有创新性，用户报告 AI 倾向于遵循传统智慧。 这很重要，因为它突显了 AI 当前作为效率工具的角色，而非软件开发中人类创造力的替代品，影响了开发者和公司如何将 AI 整合到工作流程中。它强调了人类监督的持续必要性，以推动技术超越现有范式。 文章引用了具体案例，例如 AI 在 CRDT 项目中添加不必要的墓碑标记，尽管用户意图避免它们，以及 AI 对训练数据的依赖限制了其处理新技术的能力。这些例子说明了 AI 倾向于复制过去模式而非创新。
+使用 Claude AI 的开发者报告其无法生成创新代码，包括 Swift 语言创始人 Chris Lattner 对 AI 生成编译器的评审，以及在新型 CRDT 实现中遇到的困难。 这揭示了当前 AI 在推动编程范式进步方面的根本局限，引发了关于 AI 在软件创新（而非维护性编码任务）中角色的疑问。 即使开发者明确要求新颖解决方案，Claude AI 仍坚持传统方法（如 CRDT 墓碑机制），需要大量人工干预才能覆盖其默认模式。
 
 hackernews · stevekrouse · Mar 22, 11:09
 
-**背景**: 编程中的 AI，如 Claude AI 等工具，使用基于现有代码大型数据集训练的机器学习模型，以协助代码生成和错误检测等任务。批判性思维涉及独立分析和创新，AI 目前在这方面存在困难，因为它依赖于历史数据。这一讨论与软件工程中更广泛的趋势相关，即 AI 自动化常规工作但可能无法促进突破。
+**背景**: Claude 是 Anthropic 公司专为编码任务开发的 AI 助手。CRDT（无冲突复制数据类型）是允许无需协调即可并发更新的分布式数据结构。当前 AI 编码工具基于现有代码库训练，这限制了其发明全新方法的能力。
 
-**社区讨论**: 社区评论显示情绪复杂：一些用户如 lateforwork 同意 AI 缺乏创新并遵循传统智慧，而其他用户如 01100011 则看重 AI 在测试和错误捕捉等实际任务中的价值。担忧包括 AI 在没有先例的情况下处理新技术的能力不足，以及如果过度依赖可能阻碍进步。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">Conflict-free replicated data type - Wikipedia</a></li>
+<li><a href="https://code.claude.com/docs/en/overview">Claude Code overview - Claude Code Docs</a></li>
 
-**标签**: `#AI`, `#Software Engineering`, `#Programming`, `#Innovation`, `#Critical Thinking`
+</ul>
+</details>
+
+**社区讨论**: 开发者对 AI 依赖现有技术的倾向表示担忧，有人认为这可能阻碍技术进步。其他人则强调其对常规任务的生产力提升，同时承认创新局限。部分评论者将当前 AI 工具与《星际迷航》中理想的'飞船计算机'概念相提并论。
+
+**标签**: `#AI`, `#Programming`, `#Code Generation`, `#Innovation`, `#CRDT`
 
 ---
 
 <a id="item-8"></a>
-## [2026 年行业主导机器学习研究引发学术界相关性辩论](https://www.reddit.com/r/MachineLearning/comments/1s0hcit/d_has_industry_effectively_killed_off_academic/) ⭐️ 7.0/10
+## [NixOS 的声明式配置获个人用户高度赞誉](https://www.birkey.co/2026-03-22-why-i-love-nixos.html) ⭐️ 7.0/10
 
-一篇 Reddit 帖子认为，到 2026 年，行业已在机器学习研究领域超越学术界，学术界专注于生成对抗网络和脉冲神经网络等小众主题、白盒对抗攻击等不切实际的场景以及过时的综述，而行业则利用更强大的计算资源和人才优势。 这一转变引发了对学术界在人工智能领域未来贡献的担忧，可能抑制行业可能忽视的基础性或伦理领域的创新，并可能影响全球人才流动和研究资金动态。 该帖子强调学术界只剩下对生成对抗网络和脉冲神经网络等较旧模型的研究，这些模型应用较少，并指出研究人员流向行业或双重任职的趋势，但缺乏关于出版物或资金指标的具体数据。
+一篇博客文章详细描述了用户对 NixOS 的热情使用体验，重点介绍了其声明式配置系统以及相比传统操作系统更优越的可重现性。 NixOS 的模式代表了系统管理的范式转变，为 DevOps 团队和高级用户提供了通过原子回滚和确定性构建对环境前所未有的控制能力。 近期研究显示 NixOS 实现了 91%的构建可重现性，但社区反馈指出其文档仍分散在各个论坛和历史帖子中。
 
-reddit · r/MachineLearning · NeighborhoodFatCat · Mar 22, 09:34
+hackernews · birkey · Mar 22, 17:17
 
-**背景**: 生成对抗网络（GANs）是通过对抗训练生成合成数据（如图像）的深度学习模型。脉冲神经网络（SNNs）模仿生物神经系统，使用离散脉冲进行节能计算。白盒对抗攻击涉及攻击者完全了解模型架构以操纵其输出，对机器学习系统构成安全风险。
+**背景**: NixOS 是基于 Nix 包管理器的 Linux 发行版，采用纯函数式部署模式，所有配置通过不可变文件声明。其声明式方法允许整个操作系统设置（包括软件包、服务和硬件配置）通过 configuration.nix 文件定义。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.slideshare.net/slideshow/generative-adversarial-network-gan-for-image-synthesis/264716853">Generative Adversarial Network (GAN) for Image Synthesis | PPTX</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Spiking_neural_network">Spiking neural network - Wikipedia</a></li>
-<li><a href="https://www.ultralytics.com/glossary/adversarial-attacks">What are Adversarial Attacks in Machine Learning ? | Ultralytics</a></li>
+<li><a href="https://wiki.nixos.org/wiki/NixOS_system_configuration">NixOS system configuration - Official NixOS Wiki</a></li>
+<li><a href="https://medium.com/@kandarptrivedi17/nixos-a-paradigm-shift-in-system-stability-and-reproducibility-69395abda303">NixOS: Purity, Rollbacks, and Reproducibility | Medium</a></li>
+<li><a href="https://hacksignal.com/news/nixos-achieves-91percent-build-reproducibility-rate-study-shows-progress-and-challenges/">NixOS Achieves 91% Build Reproducibility Rate, Study Shows ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 讨论显示出高参与度，得分为 108 分，赞成率为 78%，表明社区对该话题有浓厚兴趣，但内容中未提供具体评论来详细说明同意或反对的观点。
+**社区讨论**: 用户普遍称赞 NixOS 的声明式配置和可重现性，有人称其为 AI 辅助系统管理'唯一的选择'。但多位评论者批评其文档分散，其他人则强调了相比 Ubuntu/Fedora 的优势，如确定性 CI 缓存和更全面的软件包覆盖。
 
-**标签**: `#machine-learning`, `#academia-industry`, `#research-trends`, `#AI-ethics`, `#community-discussion`
+**标签**: `#NixOS`, `#Linux`, `#DevOps`, `#Reproducibility`, `#SystemConfiguration`
 
 ---
 
 <a id="item-9"></a>
-## [运行 9 张 RTX 3090 GPU 进行 AI 工作负载的实践见解](https://www.reddit.com/r/LocalLLaMA/comments/1s0p28x/honest_take_on_running_9_rtx_3090_for_ai/) ⭐️ 7.0/10
+## [Project Nomad 推出离线知识服务器](https://www.projectnomad.us/) ⭐️ 7.0/10
 
-一位用户分享了使用 9 张 RTX 3090 GPU 进行 AI 工作的实践经验，揭示了超过 6 张 GPU 会导致性能递减，原因包括 PCIe 通道限制、稳定性问题和更慢的 token 生成速度。他们推荐 Proxmox 操作系统进行实验，并建议不要为一般 AI 使用过度构建本地系统。 这很重要，因为它提供了关于本地 AI 推理中多 GPU 扩展实际限制的真实数据，挑战了更多 GPU 总能带来更好性能的假设。它通过强调何时云解决方案或较小设置更高效，帮助爱好者和中小规模研究人员避免昂贵的硬件投资。 用户发现超过一定 GPU 数量后，token 生成速度会变慢，且达到 200GB VRAM 也无法在本地运行 Claude 级别的模型。他们指出主板对 4 张以上 GPU 的支持并不简单，且在此类设置中电源和热管理变得复杂。
+Project Nomad 发布了一个独立的离线服务器，无需互联网连接即可提供百科全书知识、本地 AI 和基本工具访问。该系统专为存在互联网审查或连接不可靠的场景设计。 这项技术对于在互联网中断或审查严格地区保持信息访问至关重要，可作为个人和社区的数字韧性工具。它还支持离网生活，并为可能发生互联网中断的紧急情况做好准备。 该系统基于 Kiwix 使用的 ZIM 文件格式构建，并包含用于本地处理的 AI 功能。它可以在本地硬件上运行，无需依赖互联网即可部署在各种环境中。
 
-reddit · r/LocalLLaMA · Outside_Dance_2799 · Mar 22, 15:48
+hackernews · jensgk · Mar 22, 12:28
 
-**背景**: RTX 3090 GPU 因其高显存（24GB）和良好的性价比在 AI 领域很受欢迎。PCIe 通道是 CPU 和 GPU 之间的通信路径；在多 GPU 设置中，有限的通道会限制数据传输，降低性能。Proxmox 是一个虚拟化平台，允许 GPU 直通，从而在虚拟机中高效管理 AI 工作负载。
+**背景**: 随着全球互联网审查日益严重，离线知识保存变得越来越重要。Kiwix 等项目开创了离线维基百科访问的先河，而 Project Nomad 等新解决方案通过额外工具和 AI 功能扩展了这一概念。数字保存领域包括从 RDF 转储到商业数据库解决方案等多种方法。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.cgdirector.com/guide-to-pcie-lanes/">Guide to PCIe Lanes: How many do you need for your workload?</a></li>
-<li><a href="https://www.vminstall.com/run-ai-models-proxmox-ve/">How to Run AI Models on Proxmox VE w/ GPU Passthrough</a></li>
+<li><a href="https://www.projectnomad.us/">Project NOMAD - Offline Knowledge & AI Server</a></li>
+<li><a href="https://github.com/Crosstalk-Solutions/project-nomad?tab=readme-ov-file">GitHub - Crosstalk-Solutions/project-nomad: Project N.O.M.A.D ...</a></li>
+<li><a href="https://sourceforge.net/projects/project-nomad.mirror/">Project NOMAD download | SourceForge.net</a></li>
 
 </ul>
 </details>
 
-**标签**: `#GPU Hardware`, `#AI Infrastructure`, `#Local LLM`, `#Hardware Scaling`, `#Cost Optimization`
+**社区讨论**: 社区成员指出该项目与抵抗审查的相关性，一些人将其与 20 世纪 50 年代民防微缩胶片等历史知识保存工作相比较。技术讨论比较了不同方法，包括 Kiwix/ZIM、RDF 转储和商业数据库解决方案。一些用户批评了该项目的'末日'框架，同时承认其实用性。
+
+**标签**: `#offline-access`, `#censorship-resistance`, `#knowledge-preservation`, `#open-data`, `#decentralization`
 
 ---
 
 <a id="item-10"></a>
-## [Qwen3.5-122B-A10B 无审查激进版本以 GGUF 格式发布，采用新型 K_P 量化](https://www.reddit.com/r/LocalLLaMA/comments/1s0aa1y/qwen35122ba10b_uncensored_aggressive_gguf_release/) ⭐️ 7.0/10
+## [Starlette 1.0 发布：ASGI 框架迎来稳定版本](https://simonwillison.net/2026/Mar/22/starlette/#atom-everything) ⭐️ 7.0/10
 
-Qwen3.5-122B-A10B 大语言模型的无审查'激进'版本已以 GGUF 格式发布，采用了新型 K_P 量化方法，实现了零拒绝且无能力损失。该模型已在 Hugging Face 上提供多个量化文件，包括新引入的 K_P 量化，它通过模型特定分析来优化质量保留。 此次发布具有重要意义，因为它为研究人员和开发者提供了一个完全无审查的大语言模型，在保持原始能力的同时，通过高效量化优化了本地部署。新型 K_P 量化技术代表了模型压缩方法的进步，通过在性能与可访问性之间取得平衡，可能影响未来开源 AI 的发展。 该模型在测试中实现了 0/465 的拒绝率，没有出现循环或性能下降问题，用户可以通过编辑 jinja 模板或使用'enable_thinking': false 参数来禁用'思考'功能。K_P 量化采用模型特定分析，在关键区域选择性保留质量，据称比标准方法提供 1-2 个量化级别的质量提升。
+Starlette 1.0 正式发布，这是该 ASGI 框架经过多年开发后首个稳定版本，同时也是 FastAPI 的基础框架。此次更新包含破坏性变更，例如采用异步上下文管理器的新型 lifespan 机制来处理启动/关闭事件。 此次发布意义重大，因为 Starlette 是 FastAPI 和 Datasette 等主流 Python 项目的基础框架，其稳定性提升将影响整个生态系统。新的 lifespan 机制还为异步应用提供了更现代化的初始化模式。 最重要的变更是用异步上下文管理器的 lifespan 机制替代了原有的 on_startup/on_shutdown 参数，这更符合现代 Python 异步模式。该项目现已由 Marcelo Trylesinski 的 GitHub 账户接管维护。
 
-reddit · r/LocalLLaMA · hauhau901 · Mar 22, 02:42
+rss · Simon Willison · Mar 22, 23:57
 
-**背景**: GGUF 是一种用于表示 AI 模型的文件格式，支持多种量化类型，可在本地硬件上实现高效部署。量化是一种模型优化技术，通过降低数值（如权重和激活值）的精度来减少内存使用和计算成本，同时保持准确性。Qwen 系列是由阿里巴巴开发的大语言模型，其中 122B 参数版本代表了其最大的模型之一。无审查模型移除了商业 AI 系统中通常实施的内容限制，这些限制旨在防止有害输出。
+**背景**: ASGI（异步服务器网关接口）是 Python 用于异步 Web 服务器和应用的标准，接替了 WSGI。Starlette 是一个轻量级 ASGI 框架，结合了 Flask 的简洁性和异步能力，并作为 FastAPI 的基础框架——后者增加了自动生成 OpenAPI 文档等功能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/docs/hub/gguf">GGUF · Hugging Face</a></li>
-<li><a href="https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/">Model Quantization: Concepts, Methods, and Why It Matters</a></li>
-<li><a href="https://www.geeksforgeeks.org/deep-learning/quantization-in-deep-learning/">What is Quantization - GeeksforGeeks</a></li>
+<li><a href="https://asgi.readthedocs.io/en/latest/specs/main.html">ASGI (Asynchronous Server Gateway Interface) Specification</a></li>
+<li><a href="https://teamcreo.substack.com/p/from-blocking-to-real-time-wsgi-vs">From Blocking to Real-Time: WSGI vs ASGI Explained</a></li>
+<li><a href="https://fastapi.tiangolo.com/benchmarks/">Benchmarks - FastAPI</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Large Language Models`, `#Quantization`, `#Open Source`, `#Machine Learning`
+**标签**: `#Python`, `#ASGI`, `#Web Frameworks`, `#Starlette`, `#FastAPI`
 
 ---
 
 <a id="item-11"></a>
-## [宇树科技计划 2026 年人形机器人出货量提升至 2 万台，进军家用市场挑战特斯拉](https://www.eweek.com/news/unitree-20000-humanoid-robots-2026-china/) ⭐️ 7.0/10
+## [PC Gamer 文章因自动播放广告导致严重网页臃肿问题曝光](https://simonwillison.net/2026/Mar/22/pcgamer-audit/#atom-everything) ⭐️ 7.0/10
 
-宇树科技宣布计划将 2026 年人形机器人出货量提升至 2 万台，相比 2025 年约 5500 台大幅增长。公司正筹备在上海证券交易所进行 42 亿元人民币的 IPO 以资助机器人平台研发，并计划在三年内进军家用机器人市场，直接挑战特斯拉的 Optimus。 这标志着人形机器人市场的重大扩张野心，宇树科技旨在抢占更多全球市场份额，并挑战特斯拉在消费级应用中的主导地位。此举表明中美机器人公司之间的竞争正在加剧，可能加速人形机器人在工业和家庭场景的普及。 根据摩根士丹利数据，2025 年全球人形机器人出货量预计约为 1.3 万台，中国厂商占据近 80%市场份额。宇树科技 2026 年 2 万台的生产目标将占预期全球产量的很大一部分，显示出公司对克服行业普遍存在的规模化挑战的信心。
+技术审计显示，PC Gamer 一篇关于 RSS 阅读器的文章因自动播放视频广告膨胀至 37MB，Rodney 工具分析表明页面持续下载了数百 MB 额外数据。 这一案例展示了广告驱动的网页臃肿如何严重影响性能和用户体验，揭示了影响页面加载时间和数据消耗的行业普遍问题。 分析使用自定义工具 Rodney 审计页面，发现初始 37MB 的文章持续下载额外内容，主要来自自动播放的视频广告。
 
-telegram · zaihuapd · Mar 22, 04:15
+rss · Simon Willison · Mar 22, 22:49
 
-**背景**: 人形机器人是模仿人类形态和功能的双足机器，应用范围从工业自动化到家庭辅助。宇树科技以其四足机器狗闻名，但已扩展到人形机器人平台如 R1，该型号具备先进 AI 和开放开发接口。特斯拉的 Optimus 是该领域的主要竞争对手，其 Gen 3 规格包括 50 个执行器的手部和集成 Grok AI 以实现复杂任务自动化。
+**背景**: 网页臃肿指过度资源使用导致页面加载缓慢。自动播放视频广告尤其成问题，因为它们未经用户同意就加载媒体内容。Rodney 和 WebPageTest 等工具通过测量资源加载模式和页面重量帮助分析此类性能问题。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.unitree.com/">Unitree Robotics | Robot Dog_Quadruped_ Humanoid Robotics ...</a></li>
-<li><a href="https://botinfo.ai/articles/tesla-optimus">Tesla Optimus: Complete Analysis of AI, Specs & Future ...</a></li>
-<li><a href="https://itsupplychain.com/fewer-than-20-companies-will-scale-humanoid-robots-for-manufacturing-supply-chain-to-production-stage-by-2028/">Fewer Than 20 Companies Will Scale Humanoid Robots for</a></li>
+<li><a href="https://www.webpagetest.org/">webpagetest.org</a></li>
+<li><a href="https://www.betterads.org/desktop-auto-playing-video-ad-with-sound/">Ad Experience: Auto - playing Video Ads ... - Coalition for Better Ads</a></li>
 
 </ul>
 </details>
 
-**标签**: `#robotics`, `#artificial-intelligence`, `#industrial-automation`, `#market-competition`, `#ipo`
+**标签**: `#web-performance`, `#web-bloat`, `#optimization`, `#rodney`, `#ads`
+
+---
+
+<a id="item-12"></a>
+## [JavaScript 沙箱技术对比研究](https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything) ⭐️ 7.0/10
+
+Simon Willison 对 JavaScript 沙箱技术进行了对比研究，包括 isolated-vm、vm2、QuickJS、ShadowRealm 和 Deno Workers 等技术，这项研究受到 Aaron Harper 关于 Node.js 工作线程的启发。 这项研究很重要，因为沙箱技术对于安全运行不受信任的 JavaScript 代码至关重要，影响需要执行用户生成脚本或在应用中隔离第三方代码的开发人员。 该比较既包括 Node.js 特定的解决方案（isolated-vm、vm2），也包括运行时无关的方法（QuickJS、ShadowRealm），而 Deno Workers 则在 Deno 运行时中提供了内置的沙箱功能。
+
+rss · Simon Willison · Mar 22, 19:53
+
+**背景**: JavaScript 沙箱技术指的是隔离运行代码的技术，防止其访问或影响主执行环境。常见方法包括使用 iframe、Web Workers 或创建具有受限权限的隔离 JavaScript 上下文的专用库。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/">Research: JavaScript Sandboxing Research | Simon Willison’s Weblog</a></li>
+<li><a href="https://dev.to/leapcell/a-deep-dive-into-javascript-sandboxing-97b">A Deep Dive into JavaScript Sandboxing - DEV Community</a></li>
+<li><a href="https://www.npmjs.com/package/isolated-vm">isolated - vm - npm</a></li>
+
+</ul>
+</details>
+
+**标签**: `#javascript`, `#sandboxing`, `#security`, `#nodejs`, `#deno`
+
+---
+
+<a id="item-13"></a>
+## [基于 CRDT 的版本控制合并状态可视化工具](https://simonwillison.net/2026/Mar/22/manyana/#atom-everything) ⭐️ 7.0/10
+
+Simon Willison 使用 Pyodide 构建了一个交互式合并状态可视化工具，用于演示 Bram Cohen 在其 Manyana 项目中提出的基于 CRDT 的版本控制概念。该工具能够可视化 Cohen 用 470 行 Python 代码实现的 CRDT 版本控制中的合并算法工作原理。 该工具使 Cohen 提出的高级 CRDT 概念对开发者和教育工作者更易于理解，可能加速下一代无合并冲突版本控制系统的采用。它展示了 Pyodide 如何将复杂计算概念带入浏览器实现交互式学习。 该可视化工具是通过将 Cohen 的 Python 代码(不含注释)输入 Claude AI 进行解释，然后使用 Pyodide 构建交互式 UI 实现的。它特别关注 Cohen 的 Manyana 实现中的合并状态可视化方面。
+
+rss · Simon Willison · Mar 22, 18:57
+
+**背景**: CRDT(无冲突复制数据类型)是可以无冲突合并的数据结构，非常适合分布式系统和版本控制。Pyodide 是通过 WebAssembly 在浏览器中运行的 Python 发行版，可实现无需服务器处理的科学计算。BitTorrent 的创建者 Bram Cohen 在其 Manyana 项目中提出使用 CRDT 解决版本控制中的基本合并冲突问题。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">Conflict-free replicated data type - Wikipedia</a></li>
+<li><a href="https://pyodide.org/en/stable/index.html">Pyodide — Version 0.29.3</a></li>
+<li><a href="https://bramcohen.com/p/manyana">Manyana - by Bram Cohen - Bram’s Thoughts</a></li>
+
+</ul>
+</details>
+
+**标签**: `#vcs`, `#pyodide`, `#crdt`, `#version-control`, `#python`
+
+---
+
+<a id="item-14"></a>
+## [Git 与 AI 编程代理的集成应用](https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/#atom-everything) ⭐️ 7.0/10
+
+文章展示了 AI 编程代理如何通过自然语言指令原生理解 Git 操作（如仓库初始化、提交变更和分支合并），实现了在自主编程工作流中无缝集成版本控制。 这弥合了自主 AI 开发与人工监督之间的鸿沟，让开发者无需记忆命令即可利用 Git 的全部功能，同时保留 AI 生成代码变更的审计追踪。 代理能根据对话指令自动执行'git init'和'git log'等命令，支持包括变基讨论在内的高级功能。系统默认使用 GitHub 作为远程仓库，但兼容所有 Git 协议服务。
+
+rss · Simon Willison · Mar 21, 22:08
+
+**背景**: 自主工程指 AI 系统以最少人工干预自主完成任务。Kilo 和 Zencoder 等 AI 编程代理专门处理软件开发任务。Git 是通过提交和分支追踪代码变更的主流版本控制系统，GitHub 是其最流行的托管平台。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://kilo.ai/">Kilo - Kilo: The Open Source AI Coding Agent for VS Code , JetBrains...</a></li>
+<li><a href="https://zencoder.ai/">Zencoder | The AI Coding Agent</a></li>
+<li><a href="https://grokipedia.com/page/Agentic_Engineering">Agentic Engineering</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Git`, `#AI Coding Agents`, `#Version Control`, `#Agentic Engineering`, `#Software Development`
+
+---
+
+<a id="item-15"></a>
+## [宇树科技计划 2026 年生产 2 万台人形机器人，挑战特斯拉家用机器人市场](https://www.eweek.com/news/unitree-20000-humanoid-robots-2026-china/) ⭐️ 7.0/10
+
+宇树科技计划到 2026 年将其人形机器人产量提升至 2 万台，较 2025 年的 5500 台大幅增长。公司正筹备在上海证券交易所 IPO，拟募资 42 亿元人民币用于研发，并计划进军家用机器人市场，直接挑战特斯拉的 Optimus 机器人。 这一扩张计划标志着中国人形机器人领域正在崛起，目前中国厂商已占据全球近 80%市场份额。此举可能加速消费级机器人市场竞争，有望降低价格并推动家用自动化技术进步。 宇树 G1 型号拥有 23 个自由度，支持 Wi-Fi 6 连接，可选配 NVIDIA Jetson Orin AI 模块。其旗舰产品 H2 具备仿生面部特征，最高时速 11 公里，配备高精度扭矩传感关节。
+
+telegram · zaihuapd · Mar 22, 04:15
+
+**背景**: 全球人形机器人市场规模预计将从 2025 年的 29.2 亿美元增长至 2030 年的 152.6 亿美元，年复合增长率达 39.2%。特斯拉 2024 年发布的 Optimus 采用自研执行器和传感器，但因演示依赖远程操控而受到批评。宇树和智元机器人等中国厂商目前在产量上处于领先地位。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.aparobot.com/robots/unitree-g1">Unitree G1 - Robot Details, Use Case and Specifications ...</a></li>
+<li><a href="https://humanoidspecs.com/robots/unitree-h2">Unitree H2 by Unitree | HumanoidSpecs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Optimus_(robot)">Optimus ( robot ) - Wikipedia</a></li>
+<li><a href="https://www.marketsandmarkets.com/Market-Reports/humanoid-robot-market-99567653.html">Humanoid Robot Market Size, Share & Trends, 2025 To 2030</a></li>
+
+</ul>
+</details>
+
+**标签**: `#robotics`, `#AI`, `#IPO`, `#Tesla`, `#home-automation`
+
+---
+
+<a id="item-16"></a>
+## [研究发现鸟类利用烟头筑巢驱虫并提升雏鸟健康](https://futurism.com/science-energy/birds-cigarettes-nest) ⭐️ 7.0/10
+
+波兰罗兹大学在《动物行为》杂志发表研究，证实欧亚蓝山雀等鸟类利用废弃烟头筑巢对抗寄生虫。实验表明，烟头中的挥发性化合物能有效驱除蜱虫、螨虫和跳蚤，且含烟头材料的巢穴中雏鸟血红蛋白和红细胞浓度更高。 这一发现揭示了鸟类利用人类污染物提升生存几率的特殊进化适应，反映了城市垃圾与野生动物的复杂互动。但同时也凸显了全球每年数万亿个难降解烟头持续释放毒素的生态威胁。 该行为在多物种中出现：墨西哥朱雀会拆解烟头纤维，加拉帕戈斯鸟类则用其抵御吸血蝇。2017 年研究证实，鸟类会根据寄生虫威胁主动调整烟头收集频率。
+
+telegram · zaihuapd · Mar 22, 07:07
+
+**背景**: 欧亚蓝山雀（Cyanistes caeruleus）是常见于欧洲林地的小型雀形目鸟类。烟头中的尼古丁等化学物质具有天然杀虫剂效果，类似植物学研究中记载的烟草抵御食草动物的化学防御机制。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/蓝山雀">蓝山雀 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://www.asknature.org/zh-CN/策略/化学防御可防止寄生虫/">化学防御措施防止寄生虫——生物策略——AskNature</a></li>
+
+</ul>
+</details>
+
+**标签**: `#ecology`, `#animal_behavior`, `#pollution`, `#evolution`, `#zoology`
+
+---
+
+<a id="item-17"></a>
+## [MiniMax 升级 Coding Plan 支持全模态模型，并宣布两周内发布 MiniMax 2.7 开源权重](https://mp.weixin.qq.com/s/o4KGGgtp32vRMecOYCbVmA) ⭐️ 7.0/10
+
+MiniMax 将其 Coding Plan 升级为 Token Plan，Plus 及以上套餐用户可在保留原编程模型用量的基础上，额外获得视频、语音、音乐、图像等多模态模型的调用额度。同时宣布 MiniMax 2.7 开源权重将于约两周内发布。 此次升级使 MiniMax 成为少数提供全模态模型一站式调用的 AI 实验室，开发者可构建更具创意的 AI 应用。即将发布的 MiniMax 2.7 开源权重将让更广泛的社区能够访问和实验其模型。 平台将在工作日下午高峰时段（15:00-17:30）实施动态限流，单周调用上限为原编程模型 5 小时用量的 10 倍。MiniMax 2.7 在 OpenClaw 基准测试中表现显著提升。
+
+telegram · zaihuapd · Mar 23, 02:09
+
+**背景**: MiniMax 是一家中国 AI 实验室，开发涵盖文本、语音、视频、音乐和图像的前沿模型。Token Plan 在其原有 Coding Plan 基础上扩展了对多模态的支持。OpenClaw 是一个基准测试，用于评估 LLM 作为智能体大脑处理日程安排和编码等现实任务的表现。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://platform.minimax.io/docs/token-plan/intro">Token Plan Overview - MiniMax API Docs</a></li>
+<li><a href="https://github.com/pinchbench/skill">GitHub - pinchbench/skill: PinchBench is a benchmarking ...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#multimodal-models`, `#open-source`, `#MiniMax`, `#machine-learning`
 
 ---
