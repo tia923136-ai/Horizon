@@ -5,234 +5,303 @@ date: 2026-03-24
 lang: en
 ---
 
-> From 32 items, 13 important content pieces were selected
+> From 34 items, 16 important content pieces were selected
 
 ---
 
-1. [Streaming experts enable trillion-parameter models on consumer devices](#item-1) ⭐️ 8.0/10
-2. [Nvidia accused of leveraging financial power to lock AI customers into its ecosystem](#item-2) ⭐️ 8.0/10
-3. [Alibaba DAMO Academy launches Xuantie C950 RISC-V CPU with record performance](#item-3) ⭐️ 8.0/10
-4. [DarkSword Exploit Chain Targets Safari Users via Malicious Web Pages](#item-4) ⭐️ 8.0/10
-5. [Google launches Gemini dark web threat intelligence AI agent in public preview](#item-5) ⭐️ 8.0/10
-6. [Microsoft's Windows 11 'Fix' Faces Backlash](#item-6) ⭐️ 7.0/10
-7. [DIY Apple Home Integration for Apartment Intercoms](#item-7) ⭐️ 7.0/10
-8. [Starlette 1.0 Released as Foundation for FastAPI](#item-8) ⭐️ 7.0/10
-9. [PC Gamer article found to be 37MB due to auto-playing ads](#item-9) ⭐️ 7.0/10
-10. [JavaScript Sandboxing Techniques Compared](#item-10) ⭐️ 7.0/10
-11. [Interactive Merge State Visualizer for CRDT Version Control](#item-11) ⭐️ 7.0/10
-12. [FCC bans all foreign-made routers citing security risks](#item-12) ⭐️ 7.0/10
-13. [China's daily token usage surges over 1000x, exceeding 140 trillion in March 2024](#item-13) ⭐️ 7.0/10
+1. [LiteLLM Python package compromised in supply-chain attack](#item-1) ⭐️ 9.0/10
+2. [LiteLLM v1.82.8 compromised with credential-stealing .pth file](#item-2) ⭐️ 9.0/10
+3. [Ripgrep outperforms grep and other search tools in speed](#item-3) ⭐️ 8.0/10
+4. [Breakthrough in Streaming Experts Enables Massive MoE Models on Consumer Hardware](#item-4) ⭐️ 8.0/10
+5. [FCC bans all foreign-made routers citing security risks](#item-5) ⭐️ 8.0/10
+6. [Nvidia uses massive investments to consolidate AI dominance, accused of locking in customers](#item-6) ⭐️ 8.0/10
+7. [Alibaba DAMO unveils Xuantie C950 RISC-V CPU with record performance](#item-7) ⭐️ 8.0/10
+8. [DarkSword exploit chain targets Safari users across multiple countries](#item-8) ⭐️ 8.0/10
+9. [Google launches Gemini-powered dark web intelligence AI for security ops](#item-9) ⭐️ 8.0/10
+10. [Microsoft's 'Fix' for Windows 11 Draws Criticism](#item-10) ⭐️ 7.0/10
+11. [Starlette 1.0 Released with ASGI Framework Updates](#item-11) ⭐️ 7.0/10
+12. [PC Gamer's Web Performance Audit Reveals Extreme Bloat](#item-12) ⭐️ 7.0/10
+13. [JavaScript Sandboxing Techniques Compared](#item-13) ⭐️ 7.0/10
+14. [Interactive CRDT-based Version Control Visualizer](#item-14) ⭐️ 7.0/10
+15. [China's daily AI token usage surges over 1000x in two years](#item-15) ⭐️ 7.0/10
+16. [EU's age verification app may block non-Google Android systems](#item-16) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Streaming experts enable trillion-parameter models on consumer devices](https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything) ⭐️ 8.0/10
+## [LiteLLM Python package compromised in supply-chain attack](https://github.com/BerriAI/litellm/issues/24512) ⭐️ 9.0/10
 
-Researchers have demonstrated running trillion-parameter Mixture-of-Experts models like Kimi K2.5 (1T params) on a MacBook Pro with 96GB RAM, and Qwen3.5-397B-A17B on an iPhone at 0.6 tokens/second, using a technique that streams expert weights from SSD instead of loading the full model into memory. This breakthrough dramatically lowers the hardware requirements for running state-of-the-art AI models, potentially enabling advanced LLM capabilities on personal devices without cloud dependency, which could reshape the landscape of local AI applications. The technique activates only 32B weights at a time from the 1T parameter Kimi K2.5 model, while Qwen3.5-397B-A17B runs on just 48GB RAM. Performance remains limited on mobile devices (0.6 tokens/sec on iPhone).
+The LiteLLM Python package was compromised in a supply-chain attack, leading PyPI to quarantine the package and remove compromised versions 1.82.7 and 1.82.8. The attack appears to have originated from a compromised CI/CD pipeline using the Trivy security scanner. This incident highlights the growing risk of supply-chain attacks targeting open-source dependencies, which can affect thousands of downstream projects. It also underscores the need for stronger CI/CD security practices in the Python ecosystem. The package was temporarily quarantined on PyPI, blocking all downloads, but has since been restored after removing the compromised versions. Users of the proxy Docker image were not affected as versions were pinned in requirements.txt.
+
+hackernews · theanonymousone · Mar 24, 12:36
+
+**Background**: LiteLLM is a popular Python SDK and proxy server for interacting with various LLM APIs. PyPI's quarantine feature is a security measure to temporarily block package downloads when malware is suspected. Supply-chain attacks target software distribution channels to inject malicious code into legitimate packages.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://litellm.vercel.app/docs/">Getting Started | liteLLM</a></li>
+<li><a href="https://blog.pypi.org/posts/2024-12-30-quarantine/">Project Quarantine - The Python Package Index Blog</a></li>
+<li><a href="https://www.wiz.io/academy/application-security/ci-cd-security-best-practices">CI/CD Pipeline Security Best Practices: The Ultimate Guide | Wiz</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community members expressed concerns about CI/CD security, with suggestions ranging from better sandboxing to separating package publishing from public repositories. Some linked this incident to broader TeamPCP activity, while maintainers provided ongoing updates about the situation.
+
+**Tags**: `#security`, `#supply-chain`, `#python`, `#devops`, `#ci-cd`
+
+---
+
+<a id="item-2"></a>
+## [LiteLLM v1.82.8 compromised with credential-stealing .pth file](https://simonwillison.net/2026/Mar/24/malicious-litellm/#atom-everything) ⭐️ 9.0/10
+
+The LiteLLM v1.82.8 package on PyPI was compromised with a malicious litellm_init.pth file containing a base64-encoded credential stealer that executes automatically upon installation, without requiring any code import. This supply-chain attack affects a widely-used Python library, potentially exposing SSH keys, cloud credentials, and cryptocurrency wallets from developers' systems, highlighting PyPI's vulnerability to malicious uploads. The payload targeted 25+ credential types including AWS, Kubernetes, Docker, and blockchain wallets. PyPI quarantined the package within hours, limiting exposure to installations during a short window on March 24, 2026.
+
+rss · Simon Willison · Mar 24, 15:07
+
+**Background**: LiteLLM is a popular open-source library for unifying LLM APIs. .pth files are Python path configuration files that execute during interpreter startup. PyPI is Python's primary package repository, handling over 500,000 packages.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/BerriAI/litellm/issues/24512">[Security]: CRITICAL: Malicious litellm_init.pth in litellm 1 ...</a></li>
+<li><a href="https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/">Supply Chain Attack in litellm 1.82.8 on PyPI - futuresearch.ai</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#security`, `#python`, `#pypi`, `#supply-chain`, `#vulnerability`
+
+---
+
+<a id="item-3"></a>
+## [Ripgrep outperforms grep and other search tools in speed](https://burntsushi.net/ripgrep/) ⭐️ 8.0/10
+
+In 2016, ripgrep (rg) was demonstrated to be significantly faster than grep, ag, git grep, ucg, pt, and sift through detailed technical comparisons and optimizations. The analysis highlighted specific performance advantages like SIMD usage and threading. This matters because faster search tools improve developer productivity, especially in large codebases. Ripgrep's optimizations set a new standard for text search performance, influencing subsequent tools and workflows. Ripgrep achieves speed through Rust's performance, SIMD optimizations, and parallel processing. It also intelligently handles ignore rules and repository-scale searches more efficiently than competitors.
+
+hackernews · jxmorris12 · Mar 24, 06:31
+
+**Background**: Grep is a classic Unix command-line tool for searching plain-text data sets. Ripgrep is a modern alternative written in Rust, designed to be faster and more user-friendly while maintaining compatibility with grep's core functionality.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://burntsushi.net/ripgrep/">ripgrep is faster than { grep , ag, git grep , ucg, pt, sift} - Andrew...</a></li>
+<li><a href="https://www.codeant.ai/blogs/ripgrep-vs-grep-performance">Ripgrep vs Grep Performance : Why rg Is 10x Faster for Modern...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The community praises the post as an exemplary technical deep dive, with developers adopting ripgrep's optimizations in their own tools. Notably, ripgrep's performance advantages hold even on older hardware like a 300MHz Octane system.
+
+**Tags**: `#ripgrep`, `#performance`, `#search-tools`, `#optimization`, `#systems-programming`
+
+---
+
+<a id="item-4"></a>
+## [Breakthrough in Streaming Experts Enables Massive MoE Models on Consumer Hardware](https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything) ⭐️ 8.0/10
+
+Researchers have demonstrated running trillion-parameter Mixture-of-Experts models like Kimi K2.5 on consumer devices (96GB RAM M2 Max MacBook Pro) and even an iPhone (0.6 tokens/sec) by streaming expert weights from storage instead of loading full models into memory. This breakthrough dramatically lowers the hardware barrier for running state-of-the-art AI models, enabling complex LLM applications on edge devices and democratizing access to cutting-edge AI capabilities. The Qwen3.5-397B-A17B model (397B total params, 17B active) now runs on iPhones via flash-moe iOS implementation, while Kimi K2.5 (1T params, 32B active) operates on MacBooks - both leveraging Apple's NVMe storage bandwidth for weight streaming.
 
 rss · Simon Willison · Mar 24, 05:09
 
-**Background**: Mixture-of-Experts (MoE) models use specialized sub-networks (experts) that are selectively activated per input, allowing larger total parameters with lower active compute. Traditional MoE implementations require loading all experts into memory, while this new streaming approach dynamically loads only the needed experts from storage.
+**Background**: Mixture-of-Experts (MoE) models partition neural networks into specialized sub-networks ('experts') that activate conditionally, allowing massive parameter counts with limited computational overhead. Traditional implementations require loading all experts into memory, whereas streaming experts dynamically fetch weights from storage per token.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
-<li><a href="https://developer.nvidia.com/blog/applying-mixture-of-experts-in-llm-architectures/">Applying Mixture of Experts in LLM Architectures | NVIDIA Technical Blog</a></li>
+<li><a href="https://www.tweaktown.com/news/110610/the-iphone-17-pro-can-run-a-400b-parameter-large-language-model-on-device-by-streaming-weights-from-the-ssd/index.html">The iPhone 17 Pro can run a 400B parameter Large Language Model on-device by streaming weights from the SSD</a></li>
 <li><a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B">Qwen/Qwen3.5-397B-A17B · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Developers are excited about the rapid progress, with some noting this could enable new categories of local AI applications. Others caution that the current performance on mobile devices remains impractical for most real-world use cases.
+**Discussion**: Developers are actively sharing optimization techniques on Twitter and GitHub, with notable progress in autoresearch loops. The iOS implementation's 0.6 token/sec speed sparks discussions about practical usability versus technical feasibility.
 
-**Tags**: `#LLM`, `#Mixture-of-Experts`, `#hardware-optimization`, `#AI`, `#streaming`
+**Tags**: `#LLM`, `#Mixture-of-Experts`, `#Edge AI`, `#Model Optimization`, `#Hardware Efficiency`
 
 ---
 
-<a id="item-2"></a>
-## [Nvidia accused of leveraging financial power to lock AI customers into its ecosystem](https://www.wsj.com/tech/nvidia-ai-market-competition-9db60e4c) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [FCC bans all foreign-made routers citing security risks](https://www.bloomberg.com/news/articles/2026-03-23/fcc-bans-all-foreign-made-routers-citing-security-risks?embedded-checkout=true) ⭐️ 8.0/10
 
-Nvidia has invested billions in AI startups like OpenAI, CoreWeave, and Reflection since 2022, acting as both supplier and investor to lock customers into its ecosystem. The company also faces scrutiny for its $20 billion deal with chip startup Groq, which some argue is designed to evade antitrust scrutiny. Nvidia's strategy could stifle competition in the AI market by making it difficult for customers to switch to competitors like AMD. This has drawn attention from US lawmakers concerned about potential antitrust violations and the long-term impact on market diversity. Nvidia's investments include cloud GPU provider CoreWeave and autonomous coding startup Reflection. The Groq deal involved acquiring key talent while avoiding full acquisition to dodge regulatory hurdles.
+The FCC has officially banned all newly manufactured foreign-made consumer routers from entering the US market due to cybersecurity and supply chain concerns, adding them to the 'Covered List' of regulated entities. Existing models already approved and in use are exempt from the ban. This move could significantly disrupt global tech supply chains and impact international trade, while also setting a precedent for stricter cybersecurity regulations on consumer networking equipment. It reflects growing concerns about foreign-made devices potentially compromising national security through vulnerabilities or backdoors. The ban applies only to new models seeking certification - existing approved routers can continue to be imported and sold. Manufacturers can apply for exemptions through the Department of Defense and other agencies.
 
-telegram · zaihuapd · Mar 24, 03:02
+telegram · zaihuapd · Mar 24, 01:17
 
-**Background**: Nvidia dominates the AI chip market with its GPUs being essential for training large language models. CoreWeave specializes in GPU cloud infrastructure for AI, while Groq develops AI accelerator chips. Reflection AI focuses on autonomous coding agents as a path to superintelligence.
+**Background**: The FCC (Federal Communications Commission) is an independent US government agency responsible for regulating communications by radio, television, wire, satellite, and cable. Consumer routers have long been criticized for security vulnerabilities due to cost-cutting measures by manufacturers, including lack of firmware updates and inadequate security features.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/CoreWeave">CoreWeave - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Groq">Groq - Wikipedia</a></li>
-<li><a href="https://medium.com/@fahey_james/what-is-reflection-ai-fa646df3b954">What is Reflection AI? | by James Fahey | Medium</a></li>
+<li><a href="https://zh.wikipedia.org/zh-cn/联邦通信委员会">联邦通信委员会 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://www.secrss.com/articles/1373">研究：消费级路由器固件木马分析及防护建议 - 安全内参 | 决策者的网络安全知识库</a></li>
+<li><a href="https://www.boringcompliance.com/post/untitled-144">美国FCC更新Covered List 将所有外国生产路由器列入国家安全风险清单</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Nvidia`, `#antitrust`, `#semiconductors`, `#investment`
+**Tags**: `#cybersecurity`, `#regulations`, `#networking`, `#trade-policy`, `#FCC`
 
 ---
 
-<a id="item-3"></a>
-## [Alibaba DAMO Academy launches Xuantie C950 RISC-V CPU with record performance](https://mp.weixin.qq.com/s/TTnqm8qm3Dxshj_0bxwtkw) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [Nvidia uses massive investments to consolidate AI dominance, accused of locking in customers](https://www.wsj.com/tech/nvidia-ai-market-competition-9db60e4c) ⭐️ 8.0/10
 
-Alibaba DAMO Academy unveiled its flagship Xuantie C950 RISC-V CPU on March 24 at the 2026 Xuantie RISC-V Ecosystem Conference in Shanghai, achieving over 70 points in the Specint2006 single-core benchmark, currently the highest publicly reported score for RISC-V processors. This breakthrough demonstrates RISC-V's growing competitiveness in high-performance computing, potentially disrupting ARM and x86 dominance in cloud AI and edge computing markets, especially with native support for billion-parameter models like Qwen3 and DeepSeek V3. The chip integrates DAMO's proprietary AI acceleration engine and targets cloud computing, generative AI, high-end robotics, and edge computing applications. Its Specint2006 score of 70+ significantly outperforms previous RISC-V implementations.
+Nvidia has invested billions in AI startups like OpenAI, CoreWeave, and Reflection since 2022, acting as both supplier and investor to lock customers into its ecosystem. The company also faces antitrust scrutiny for tactics like its $20 billion deal with chip startup Groq, which included acquiring its core team. Nvidia's strategy could stifle competition in the AI industry by making it difficult for customers to switch to competitors like AMD. The company's financial dominance and aggressive tactics have drawn regulatory attention, potentially impacting the future of AI innovation and market fairness. CoreWeave specializes in GPU cloud infrastructure for AI, while Reflection focuses on autonomous coding agents. Nvidia's $20 billion deal with Groq included licensing its technology and acquiring key personnel, raising antitrust concerns.
+
+telegram · zaihuapd · Mar 24, 03:02
+
+**Background**: Nvidia has become a dominant force in AI through its GPUs, which are essential for training and running AI models. Startups like CoreWeave and Reflection rely on Nvidia's hardware, making them vulnerable to its financial influence. Groq is known for its AI accelerator chips that compete with Nvidia's offerings.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/CoreWeave">CoreWeave - Wikipedia</a></li>
+<li><a href="https://medium.com/@fahey_james/what-is-reflection-ai-fa646df3b954">What is Reflection AI? | by James Fahey | Medium</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Groq">Groq - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#Nvidia`, `#Antitrust`, `#Investment`, `#Market Competition`
+
+---
+
+<a id="item-7"></a>
+## [Alibaba DAMO unveils Xuantie C950 RISC-V CPU with record performance](https://mp.weixin.qq.com/s/TTnqm8qm3Dxshj_0bxwtkw) ⭐️ 8.0/10
+
+Alibaba DAMO Academy announced its flagship Xuantie C950 RISC-V CPU on March 24, 2026, claiming a record-breaking Specint2006 single-core score of over 70 points. The chip features native support for running billion-parameter AI models like Qwen3 and DeepSeek V3 through its integrated AI acceleration engine. This represents a major milestone for RISC-V adoption in high-performance computing, potentially disrupting ARM and x86 dominance in cloud/AI applications. The native AI model support positions it as a strong contender for next-generation AI infrastructure in China's tech ecosystem. The C950 targets cloud computing, generative AI, robotics and edge computing, with performance currently leading public RISC-V implementations. However, detailed architectural specifications and third-party benchmark verification are not yet available.
 
 telegram · zaihuapd · Mar 24, 06:01
 
-**Background**: RISC-V is an open-standard instruction set architecture gaining traction as an alternative to proprietary architectures like ARM and x86. Specint2006 is a standardized benchmark for measuring CPU integer performance. Qwen3 and DeepSeek V3 are Alibaba's large language models with hundreds of billions of parameters.
+**Background**: RISC-V is an open-standard instruction set architecture gaining traction as an alternative to proprietary ARM and x86 architectures. Specint2006 is a standardized benchmark for measuring integer processing performance. Qwen3 and DeepSeek V3 are open-weight Chinese AI models comparable to GPT-4 in scale, recently made available on AWS Bedrock.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/RISC-V_architecture">RISC-V architecture</a></li>
 <li><a href="https://en.wikipedia.org/wiki/SPECint">SPECint - Wikipedia</a></li>
-<li><a href="https://artificialanalysis.ai/models/comparisons/qwen3-max-vs-deepseek-v3">Qwen3 Max vs DeepSeek V3 (Dec '24): Model Comparison</a></li>
+<li><a href="https://www.aboutamazon.com/news/aws/alibaba-qwen3-deepseek-v3-amazon-bedrock">Qwen3 and DeepSeek-V3.1 models now available fully ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#RISC-V`, `#AI Hardware`, `#Cloud Computing`, `#Semiconductors`, `#Edge Computing`
-
----
-
-<a id="item-4"></a>
-## [DarkSword Exploit Chain Targets Safari Users via Malicious Web Pages](https://t.me/zaihuapd/40482) ⭐️ 8.0/10
-
-The DarkSword exploit chain, active since November 2025, targets Safari users by infecting devices when they visit malicious web pages, affecting iOS versions 18.4 to 18.7 and delivering GHOSTBLADE payloads. The vulnerabilities have been patched in iOS 26.3, with some fixes released earlier, such as CVE-2025-43529, which was addressed in iOS 18.7.3 and 26.2. This exploit chain is significant due to its sophistication, chaining six vulnerabilities (including three zero-days) to achieve silent device takeover, and its use in targeted attacks across multiple countries. The GHOSTBLADE payload can steal sensitive data, including communications, photos, and cryptocurrency exchange credentials, posing a severe threat to affected users. The exploit chain is entirely written in JavaScript and achieves one-click device takeover on unpatched iPhones. It specifically targets iOS 18.4-18.7 and has been used in attacks in Saudi Arabia, Turkey, Malaysia, and Ukraine.
-
-telegram · zaihuapd · Mar 24, 11:45
-
-**Background**: DarkSword is a newly disclosed iOS exploit chain that leverages multiple zero-day vulnerabilities to fully compromise iOS devices. GHOSTBLADE is a known malware family that systematically scans infected devices for sensitive data, including cryptocurrency exchange applications and personal communications.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://cloud.google.com/blog/topics/threat-intelligence/darksword-ios-exploit-chain">The Proliferation of DarkSword: iOS Exploit Chain Adopted by ...</a></li>
-<li><a href="https://thehackernews.com/2026/03/darksword-ios-exploit-kit-uses-6-flaws.html">DarkSword iOS Exploit Kit Uses 6 Flaws, 3 Zero-Days for Full ...</a></li>
-<li><a href="https://cybersecsentinel.com/darksword-ios-exploit-chains-six-vulnerabilities-for-silent-device-takeover/">DarkSword iOS Exploit Chains Six Vulnerabilities for Silent ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#cybersecurity`, `#ios`, `#safari`, `#zero-day`, `#malware`
-
----
-
-<a id="item-5"></a>
-## [Google launches Gemini dark web threat intelligence AI agent in public preview](https://www.theregister.com/2026/03/23/google_dark_web_ai/) ⭐️ 8.0/10
-
-Google has integrated a Gemini-based AI agent into Google Threat Intelligence, now available in public preview. The service analyzes 8-10 million dark web posts daily with 98% accuracy to identify risks like initial access broker activities, data leaks, and insider threats for organizations. This represents a major advancement in automated dark web monitoring, enabling enterprises to proactively detect cyber threats at unprecedented scale. The high accuracy could significantly reduce false positives in threat intelligence operations. The AI first creates organizational profiles before scanning dark web content. It specifically targets initial access brokers (IABs) - hackers who sell network access to other cybercriminals. The 98% accuracy claim comes from Google's internal testing.
-
-telegram · zaihuapd · Mar 24, 13:15
-
-**Background**: Initial access brokers (IABs) are cybercriminals who specialize in breaching networks and selling access to ransomware groups. The dark web contains forums where such illegal transactions occur. Google Threat Intelligence is part of Google Cloud's security suite, while Gemini is Google's flagship AI model family.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.theregister.com/2026/03/23/google_dark_web_ai/">Google unleashes Gemini AI agents on the dark web • The Register</a></li>
-<li><a href="https://cybersecuritynews.com/google-gemini-ai-dark-web/">Google Says Gemini AI Agents are Crawling the Dark Web Posts to...</a></li>
-<li><a href="https://www.cisecurity.org/insights/blog/initial-access-brokers-how-theyre-changing-cybercrime">Initial Access Brokers How They’re Changing Cybercrime - CIS A Deep-Dive Into Initial Access Brokers: Trends, Statistics ... M-Trends 2026: Initial Access Handoff Shrinks From Hours to ... Researchers Uncover Data Leak Site Linked To Active Initial ... They hack to sell: corporate access traded in shadows | Cybernews New Data Leak Site Uncovered Linked to Active Initial Access ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Cybersecurity`, `#Dark Web`, `#Google`, `#Threat Intelligence`
-
----
-
-<a id="item-6"></a>
-## [Microsoft's Windows 11 'Fix' Faces Backlash](https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/) ⭐️ 7.0/10
-
-Microsoft's approach to addressing Windows 11 user experience issues has been criticized as inadequate and user-hostile, sparking widespread debate about corporate software practices. This matters because Windows 11 is used by millions globally, and Microsoft's handling of updates and forced features sets precedents for how tech giants balance business interests with user needs. Specific complaints include Microsoft Start news reappearing after being disabled, unwanted content delivery, and lack of meaningful system changes to prevent recurring issues.
-
-hackernews · h0ek · Mar 24, 09:36
-
-**Background**: Windows 11 is Microsoft's latest operating system released in 2021, succeeding Windows 10. Microsoft has faced ongoing criticism for aggressive update policies, pre-installed apps, and features that users find difficult to disable permanently.
-
-**Discussion**: Comments reveal deep frustration with Microsoft's practices, comparing them to historical anti-competitive behavior. Users express particular anger about Microsoft Start's persistence and content quality, while some debate whether government adoption enables poor user experiences.
-
-**Tags**: `#Microsoft`, `#Windows11`, `#UserExperience`, `#CorporateCriticism`, `#Software`
-
----
-
-<a id="item-7"></a>
-## [DIY Apple Home Integration for Apartment Intercoms](https://www.jackhogan.me/blog/box-of-secrets/) ⭐️ 7.0/10
-
-A detailed DIY guide demonstrates how to discreetly modify an apartment intercom system to integrate with Apple Home, enabling remote door access via HomeKit. The solution involves hardware hacking while attempting to avoid detection by landlords or building management. This addresses a common urban living pain point where traditional intercoms lack smart home compatibility, while raising important questions about the legality and ethics of modifying shared building infrastructure. The solution could inspire more ethical commercial alternatives in this underserved market segment. The modification requires intercepting and simulating the intercom's electrical signals while maintaining the original functionality. Some commenters noted regional alternatives like pre-made adapter boards in Romania (€30) or simpler voicemail-based workarounds.
-
-hackernews · jackhogan11 · Mar 23, 12:42
-
-**Background**: Apple HomeKit is Apple's smart home platform that allows control of compatible devices through iOS. Many apartment intercoms use analog systems without modern connectivity options, creating demand for integration solutions. Hardware hacking of such systems typically involves reverse-engineering proprietary protocols.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.home-assistant.io/integrations/homekit/">Instructions on how to set up the HomeKit Bridge integration in Home...</a></li>
-<li><a href="https://jdmcd.io/blog/hacking-my-apartment-intercom/">Hacking My Apartment Intercom – Jimmy McDermott –</a></li>
-<li><a href="https://hackaday.io/project/186880/instructions">HOW I HACKED MY INTERCOM SO I CAN BE MORE LAZY - Hackaday.io</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Comments reveal ethical concerns about modifying shared infrastructure, with some users calling it 'legally dubious.' Alternative solutions were shared, including commercial adapters and voicemail hacks. Many noted the poor state of intercom technology and market gaps for simple, secure solutions.
-
-**Tags**: `#DIY`, `#Home Automation`, `#Apple HomeKit`, `#Intercom`, `#Hardware Hacking`
+**Tags**: `#RISC-V`, `#AI-Hardware`, `#Cloud-Computing`, `#Edge-Computing`, `#Semiconductors`
 
 ---
 
 <a id="item-8"></a>
-## [Starlette 1.0 Released as Foundation for FastAPI](https://simonwillison.net/2026/Mar/22/starlette/#atom-everything) ⭐️ 7.0/10
+## [DarkSword exploit chain targets Safari users across multiple countries](https://t.me/zaihuapd/40482) ⭐️ 8.0/10
 
-Starlette 1.0, the foundational ASGI framework for FastAPI, has been released after years of development, introducing breaking changes including a new lifespan mechanism using async context managers. This release is significant because Starlette powers FastAPI, one of Python's most popular web frameworks, and the 1.0 milestone signals API stability for the broader ASGI ecosystem. The most notable change replaces on_startup/on_shutdown parameters with a lifespan async context manager, while maintaining Starlette's signature Flask-like single-file simplicity that makes it LLM-friendly.
+A sophisticated exploit chain called DarkSword has been actively used since November 2025 to infect iPhones through Safari, targeting users in Saudi Arabia, Turkey, Malaysia, and Ukraine. The attack chain combines six vulnerabilities to deliver payloads like GHOSTBLADE, affecting iOS versions 18.4 through 18.7 before being patched in iOS 26.3. This disclosure reveals a widespread, multi-stage attack that could compromise iPhones simply by visiting a malicious website, demonstrating the evolving sophistication of mobile threats. The international targeting and payload delivery show how exploit chains are being weaponized for real-world attacks across borders. One critical vulnerability in the chain (CVE-2025-43529) was a WebKit use-after-free flaw patched earlier in iOS 18.7.3. The exploit chain's modular design allowed different attackers to adapt it for various purposes, with Google tracking multiple distinct users of the technique.
 
-rss · Simon Willison · Mar 22, 23:57
+telegram · zaihuapd · Mar 24, 11:45
 
-**Background**: Starlette is a lightweight ASGI framework/toolkit for building async web services in Python. ASGI (Asynchronous Server Gateway Interface) is the async successor to WSGI, enabling Python frameworks to handle concurrent connections efficiently. FastAPI builds upon Starlette while adding features like automatic OpenAPI documentation.
+**Background**: DarkSword represents an advanced iOS exploit chain that combines multiple vulnerabilities to bypass security protections. Such chains typically start with browser or rendering engine flaws (like WebKit in Safari), then escalate privileges through subsequent exploits. GHOSTBLADE appears to be a custom payload name rather than the Elder Scrolls reference found in search results.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Asynchronous_Server_Gateway_Interface">Asynchronous Server Gateway Interface - Wikipedia</a></li>
-<li><a href="https://fastapi.tiangolo.com/benchmarks/">Benchmarks - FastAPI</a></li>
+<li><a href="https://cloud.google.com/blog/topics/threat-intelligence/darksword-ios-exploit-chain">The Proliferation of DarkSword : iOS Exploit Chain Adopted by...</a></li>
+<li><a href="https://www.malwarebytes.com/blog/mobile/2026/03/a-darksword-hangs-over-unpatched-iphones">A DarkSword hangs over unpatched iPhones | Malwarebytes</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43529">NVD - CVE-2025-43529</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Python`, `#ASGI`, `#Web Frameworks`, `#Starlette`, `#FastAPI`
+**Tags**: `#cybersecurity`, `#ios`, `#safari`, `#zero-day`, `#vulnerability`
 
 ---
 
 <a id="item-9"></a>
-## [PC Gamer article found to be 37MB due to auto-playing ads](https://simonwillison.net/2026/Mar/22/pcgamer-audit/#atom-everything) ⭐️ 7.0/10
+## [Google launches Gemini-powered dark web intelligence AI for security ops](https://www.theregister.com/2026/03/23/google_dark_web_ai/) ⭐️ 8.0/10
 
-A technical audit revealed a PC Gamer article bloated to 37MB due to auto-playing video ads, analyzed using the Rodney CLI tool. The investigation showed continuous downloading of hundreds more megabytes from these ads. This exemplifies severe web bloat that degrades user experience and accessibility, particularly for those with limited bandwidth. It demonstrates how ad-heavy designs can undermine content delivery in media websites. The analysis used Rodney, a CLI tool for web interaction and performance testing. The 37MB size doesn't include subsequent downloads from auto-playing ads that continue loading in the background.
+Google has released a public preview of its Gemini-powered dark web intelligence service integrated with Google Threat Intelligence, analyzing 8-10 million daily dark web posts to identify organizational risks with 98% accuracy in internal tests. This represents a major advancement in proactive threat detection as it automates dark web monitoring at unprecedented scale, potentially disrupting initial access broker markets and preventing data breaches before they occur. The service first builds organizational profiles for clients, then specifically detects initial access broker activities, data leaks and insider threats from dark web content. It currently focuses on English-language forums but may expand to other languages.
 
-rss · Simon Willison · Mar 22, 22:49
+telegram · zaihuapd · Mar 24, 13:15
 
-**Background**: Web bloat refers to unnecessary page weight from oversized media, redundant code, and excessive scripts. Rodney is an open-source CLI tool developed by Simon Willison for web automation and performance analysis, often used with AI agents.
+**Background**: Initial Access Brokers (IABs) are cybercriminals who sell compromised network access to ransomware groups. The dark web hosts underground markets where such access and stolen data are traded. Google Threat Intelligence is a security platform that aggregates threat data from Google's infrastructure and VirusTotal.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/simonw/rodney">GitHub - simonw/rodney: CLI tool for interacting with the web</a></li>
-<li><a href="https://simonwillison.net/2026/Feb/10/showboat-and-rodney/">Introducing Showboat and Rodney, so agents can demo what they ...</a></li>
-<li><a href="https://www.speedcurve.com/blog/page-bloat-web-performance/">SpeedCurve | What is page bloat? And how is it hurting your business, your search rank, and your users?</a></li>
+<li><a href="https://www.theregister.com/2026/03/23/google_dark_web_ai/">Google unleashes Gemini AI agents on the dark web • The Register</a></li>
+<li><a href="https://teamwin.in/google-says-gemini-ai-agents-are-crawling-the-dark-web-posts-to-detect-threats/">Google Says Gemini AI Agents are Crawling the Dark Web Posts to...</a></li>
+<li><a href="https://cloud.google.com/security/products/threat-intelligence">Google Threat Intelligence - know who's targeting you</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#web-performance`, `#web-bloat`, `#rodney`, `#analysis`, `#web-development`
+**Tags**: `#AI`, `#cybersecurity`, `#threat-intelligence`, `#dark-web`, `#Google`
 
 ---
 
 <a id="item-10"></a>
-## [JavaScript Sandboxing Techniques Compared](https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything) ⭐️ 7.0/10
+## [Microsoft's 'Fix' for Windows 11 Draws Criticism](https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/) ⭐️ 7.0/10
 
-A detailed research comparison evaluates six JavaScript sandboxing approaches: isolated-vm, vm2, quickjs-emscripten, QuickJS-NG, ShadowRealm, and Deno Workers, inspired by Node.js worker threads exploration. This matters because sandboxing is critical for safely executing untrusted JavaScript code in applications like plugin systems, online IDEs, and serverless functions, where security breaches can have severe consequences. The research highlights vm2's security vulnerabilities despite its popularity, while noting isolated-vm's stronger isolation but maintenance challenges. QuickJS variants offer lightweight alternatives with different tradeoffs.
+Microsoft's approach to addressing Windows 11 issues has been criticized as 'gaslighting' by users, with complaints about forced updates and intrusive features like Microsoft Start news that re-enables itself after being disabled. This highlights growing frustration with Microsoft's user-hostile practices in Windows 11, which could erode trust and push users towards alternative operating systems if not addressed properly. Specific complaints include Microsoft Start news displaying unwanted content, forced updates, and comparisons to Apple's similarly intrusive practices with macOS updates and iCloud promotions.
 
-rss · Simon Willison · Mar 22, 19:53
+hackernews · h0ek · Mar 24, 09:36
 
-**Background**: JavaScript sandboxing isolates untrusted code execution to prevent access to sensitive system resources. Traditional approaches include iframes (for browsers) and VM modules (for Node.js), but each has limitations in security or performance. New proposals like ShadowRealm and runtimes like Deno offer modern alternatives.
+**Background**: Windows 11 has faced criticism since its launch for its user interface changes, system requirements, and various built-in advertisements. Microsoft has a history of pushing unwanted features, dating back to the Internet Explorer-Netscape wars in the 1990s. The company's dominant market position in government and enterprise sectors has historically shielded it from consequences of poor user experience decisions.
+
+**Discussion**: Comments reveal widespread frustration with Microsoft's practices, with users comparing them to domestic violence (though some found this comparison inappropriate), noting historical patterns of user abuse, and drawing parallels with Apple's increasingly intrusive practices. Some suggest the only solution is government organizations abandoning Microsoft products.
+
+**Tags**: `#Microsoft`, `#Windows 11`, `#User Experience`, `#Tech Criticism`, `#Software Ethics`
+
+---
+
+<a id="item-11"></a>
+## [Starlette 1.0 Released with ASGI Framework Updates](https://simonwillison.net/2026/Mar/22/starlette/#atom-everything) ⭐️ 7.0/10
+
+Starlette 1.0, the foundational Python ASGI framework for FastAPI, has been officially released after eight years of development, introducing breaking changes including a new lifespan mechanism for startup/shutdown events. This release marks production-ready stability for a framework that powers FastAPI (used by 10M+ daily downloads) and enables easier LLM-assisted development, though compatibility breaks may affect existing AI-generated code. The lifespan system replaces on_startup/on_shutdown with async context managers, while maintaining optional dependencies like httpx for testing and Jinja2 for templating. The project has transferred to Marcelo Trylesinski's GitHub for better maintenance.
+
+rss · Simon Willison · Mar 22, 23:57
+
+**Background**: Starlette is a lightweight ASGI framework designed for async web services, offering WebSocket support and background tasks. It serves as the foundation for FastAPI but with lower-level control. ASGI (Asynchronous Server Gateway Interface) is Python's standard for async web servers and applications.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://healeycodes.com/sandboxing-javascript-code">Sandboxing JavaScript Code — Andrew Healey</a></li>
-<li><a href="https://dev.to/leapcell/a-deep-dive-into-javascript-sandboxing-97b">A Deep Dive into JavaScript Sandboxing - DEV Community</a></li>
-<li><a href="https://zendesk.engineering/sandboxing-javascript-e4def55e855e?gi=b5419a96afd3">Sandboxing JavaScript. tl;dr iframes are likely your best bet… | by Daniel Ribeiro | Zendesk Engineering</a></li>
+<li><a href="https://starlette.dev/">Introduction - Starlette</a></li>
+<li><a href="https://github.com/Kludex/starlette">GitHub - Kludex/starlette: The little ASGI framework that ...</a></li>
+<li><a href="https://pypi.org/project/starlette/">starlette · PyPI Starlette: A Modern Python ASGI Framework - CodeRivers Python - Starlette - GeeksforGeeks Starlette 1.0.0: Eight Years on Zero-Ver and Finally a Stable ... Starlette</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Python`, `#Web Frameworks`, `#ASGI`, `#Starlette`, `#FastAPI`
+
+---
+
+<a id="item-12"></a>
+## [PC Gamer's Web Performance Audit Reveals Extreme Bloat](https://simonwillison.net/2026/Mar/22/pcgamer-audit/#atom-everything) ⭐️ 7.0/10
+
+An audit of PC Gamer's website revealed extreme performance issues, with a single article consuming 37MB due to auto-playing video ads and inefficient resource loading. The analysis was conducted using Claude Code and the Rodney CLI tool to investigate the page structure and loading behavior. This highlights the growing problem of web bloat affecting user experience, particularly from auto-playing ads, which is relevant for web developers and performance engineers optimizing modern websites. The novel approach using AI-assisted tools like Claude Code and Rodney demonstrates new methods for performance auditing. The audit found the page continued downloading hundreds more megabytes after initial load due to auto-playing video ads. Rodney was used to analyze the page's accessibility tree structure before crafting selectors, following its recommended best practices.
+
+rss · Simon Willison · Mar 22, 22:49
+
+**Background**: Rodney is a CLI tool for interacting with and analyzing web pages, recently developed by Simon Willison. Claude Code is Anthropic's cloud-based coding tool that can execute tasks, write code, and run tests through a web interface. Web bloat refers to the excessive size and complexity of modern web pages, often due to ads, trackers, and unnecessary JavaScript.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/simonw/rodney">GitHub - simonw/rodney: CLI tool for interacting with the web</a></li>
+<li><a href="https://code.claude.com/docs/en/claude-code-on-the-web">Claude Code on the web - Claude Code Docs</a></li>
+<li><a href="https://simonwillison.net/2026/Feb/10/showboat-and-rodney/">Introducing Showboat and Rodney, so agents can demo what they ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#web-performance`, `#web-bloat`, `#rodney`, `#claude-code`, `#audit`
+
+---
+
+<a id="item-13"></a>
+## [JavaScript Sandboxing Techniques Compared](https://simonwillison.net/2026/Mar/22/javascript-sandboxing-research/#atom-everything) ⭐️ 7.0/10
+
+Simon Willison published a detailed comparison of JavaScript sandboxing techniques, including isolated-vm, vm2, QuickJS variants, ShadowRealm, and Deno Workers, expanding on Aaron Harper's initial exploration of Node.js worker threads. This research provides valuable insights for developers needing to securely run untrusted JavaScript code, addressing a critical security challenge in web applications and server-side JavaScript environments. The comparison highlights tradeoffs between isolation and performance, with native V8 isolates (isolated-vm) offering speed while WebAssembly-based solutions (QuickJS) provide stronger isolation but with performance penalties and feature limitations.
+
+rss · Simon Willison · Mar 22, 19:53
+
+**Background**: JavaScript sandboxing is a security mechanism to isolate and safely execute untrusted code. Common approaches include V8 isolates, WebAssembly runtimes, and language-level proposals like ShadowRealm. Node.js and Deno offer different built-in sandboxing capabilities through worker threads and permission models.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://cybercorsairs.com/sandboxing-javascript-a-side-by-side-look-at-your-options/">JavaScript Sandboxing: Running Untrusted Code Safely</a></li>
+<li><a href="https://letsdatascience.com/news/javascript-sandboxing-research-compares-nodejs-options-6f16be0b">JavaScript Sandboxing Research Compares Node.js Options</a></li>
 
 </ul>
 </details>
@@ -241,67 +310,68 @@ rss · Simon Willison · Mar 22, 19:53
 
 ---
 
-<a id="item-11"></a>
-## [Interactive Merge State Visualizer for CRDT Version Control](https://simonwillison.net/2026/Mar/22/manyana/#atom-everything) ⭐️ 7.0/10
+<a id="item-14"></a>
+## [Interactive CRDT-based Version Control Visualizer](https://simonwillison.net/2026/Mar/22/manyana/#atom-everything) ⭐️ 7.0/10
 
-Simon Willison created an interactive Merge State Visualizer tool using Pyodide to demonstrate Bram Cohen's CRDT-based version control concepts, with AI-assisted explanations from Claude. This provides a practical way to understand advanced CRDT-based version control systems, which could potentially offer better solutions than current tools for handling complex merge conflicts in distributed environments. The visualizer is based on Bram Cohen's 470-line Python implementation of his 'manyana' concept, and runs entirely in the browser via Pyodide without requiring server-side processing.
+Simon Willison has created an interactive visualization tool for Bram Cohen's CRDT-based version control system called Manyana, using Pyodide to run Python in the browser and Claude AI to generate explanations. This provides a tangible way to understand CRDTs in version control systems, which could revolutionize collaborative editing by enabling conflict-free merging without centralized coordination. The visualization is based on Cohen's 470-line Python implementation, with the UI built using Pyodide which allows Python to run directly in web browsers through WebAssembly.
 
 rss · Simon Willison · Mar 22, 18:57
 
-**Background**: CRDTs (Conflict-Free Replicated Data Types) are data structures that allow distributed systems to synchronize without coordination. Pyodide is a Python distribution that runs in the browser via WebAssembly. Bram Cohen, creator of BitTorrent, has proposed CRDTs as the future of version control systems to handle complex merge scenarios better than current approaches.
+**Background**: CRDTs (Conflict-Free Replicated Data Types) are data structures that automatically resolve conflicts in distributed systems. Pyodide is a Python distribution that runs in the browser via WebAssembly, enabling interactive Python applications without server-side processing. Bram Cohen is the creator of BitTorrent and has been working on next-generation version control systems.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://bramcohen.com/p/manyana">A Coherent Vision for the Future of Version Control</a></li>
+<li><a href="https://www.geeksforgeeks.org/r-language/what-is-crdt-in-distributed-systems/">What is CRDT in Distributed Systems? - GeeksforGeeks</a></li>
 <li><a href="https://pyodide.org/">Pyodide — Version 0.29.3</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#vcs`, `#pyodide`, `#crdt`, `#version-control`, `#visualization`
+**Tags**: `#vcs`, `#pyodide`, `#crdt`, `#version-control`, `#python`
 
 ---
 
-<a id="item-12"></a>
-## [FCC bans all foreign-made routers citing security risks](https://www.bloomberg.com/news/articles/2026-03-23/fcc-bans-all-foreign-made-routers-citing-security-risks?embedded-checkout=true) ⭐️ 7.0/10
+<a id="item-15"></a>
+## [China's daily AI token usage surges over 1000x in two years](http://paper.people.com.cn/rmrb/pc/content/202603/24/content_30147015.html) ⭐️ 7.0/10
 
-The FCC has officially banned all foreign-made consumer routers from the US market due to cybersecurity and supply chain concerns, placing them on the 'Covered List'. New models will require approval from US agencies like the Department of Defense for exemptions. This decision could significantly disrupt global supply chains and impact major networking equipment manufacturers, while also reflecting growing concerns about cybersecurity threats originating from foreign-made hardware. The ban follows a 'grandfathering' principle, allowing continued use and sale of previously approved models while blocking new uncertified devices. Exemptions require approval from multiple US government agencies.
-
-telegram · zaihuapd · Mar 24, 01:17
-
-**Background**: The FCC's Covered List includes companies deemed national security risks, primarily Chinese firms like Huawei and ZTE. Supply chain attacks have become a major concern following incidents like SolarWinds, where compromised hardware/software updates were used to infiltrate systems.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://zhuanlan.zhihu.com/p/1937155538233320578">FCC 新规核心条款+过渡期强制时间表 - 知乎</a></li>
-<li><a href="https://gma.caict.ac.cn/update/66/138">美国: FCC 禁止对涵盖清单涉及公司的通信设备进行授权| FCC认证更新</a></li>
-<li><a href="https://cn-sec.com/archives/5120429.html">800万次请求后，我们发现了一个让SolarWinds... | CN-SEC 中文网</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#cybersecurity`, `#regulation`, `#networking`, `#supply-chain`, `#FCC`
-
----
-
-<a id="item-13"></a>
-## [China's daily token usage surges over 1000x, exceeding 140 trillion in March 2024](http://paper.people.com.cn/rmrb/pc/content/202603/24/content_30147015.html) ⭐️ 7.0/10
-
-China's National Data Bureau revealed that daily token usage exceeded 140 trillion in March 2024, up from 100 billion at the start of 2024 and representing over 1000x growth in two years. This explosive growth reflects rapid AI industry commercialization and the formation of a new value system around token usage, pricing, and trading, driven by China's data market reforms. Tokens are the smallest units processed by AI models, with measurable, tradable characteristics. The 140 trillion milestone demonstrates China's accelerating AI adoption and data supply chain development.
+China's National Data Bureau reported that daily token usage in AI systems exceeded 140 trillion in March 2025, up from 100 billion in early 2024 - representing over 1000x growth in two years. This explosive growth indicates rapid commercialization of AI technologies in China and the formation of a new value system around tokenized data processing, which is becoming a key pathway for AI industry monetization. Tokens are the smallest units processed by AI models (roughly 1000 tokens ≈ 750 English words), with measurable, pricable and tradable characteristics that enable new economic models for AI services.
 
 telegram · zaihuapd · Mar 24, 07:22
 
-**Background**: In AI systems, tokens represent segmented units of text that models process, ranging from single characters to full words. China's data element marketization reforms since 2020 have created institutional mechanisms for data trading and valuation, enabling token-based commercialization of AI services. Major platforms now bill per token, with output tokens typically costing 3-5× more than input tokens.
+**Background**: Tokenization breaks down text/images into numerical representations that AI models can process. China's data element marketization reforms since 2020 have accelerated the development of token-based AI ecosystems. The growth aligns with national policies promoting data as a production factor.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">What are tokens and how to count them? - OpenAI Help Center</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S1059056026002649">The Marketization of Data Elements, Facilitation of Cross ...</a></li>
 <li><a href="https://www.sentisight.ai/tokens-explained-new-currency-of-generative-ai/">Tokens Explained: The Currency of Generative AI</a></li>
+<li><a href="https://ideas.repec.org/a/eee/finana/v104y2025ipas1057521925004168.html">Data element marketization and corporate investment efficiency...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Tokenization`, `#Data Market`, `#China Tech`, `#Commercialization`
+**Tags**: `#AI`, `#Tokenization`, `#China`, `#Data Economy`, `#Commercialization`
+
+---
+
+<a id="item-16"></a>
+## [EU's age verification app may block non-Google Android systems](https://t.me/zaihuapd/40484) ⭐️ 7.0/10
+
+The EU is developing an open-source age verification app that requires devices to pass Google's Play Integrity verification and be downloaded from the Play Store with a Google account, effectively blocking non-Google-authorized Android systems like GrapheneOS. This move could deepen reliance on US tech giants like Google, contradicting EU digital sovereignty goals, while raising privacy concerns as it excludes privacy-focused Android forks. The app will use Google's Play Integrity API (formerly SafetyNet) to verify device authenticity, requiring Google Play Services. This excludes security-focused Android variants that deliberately avoid Google services.
+
+telegram · zaihuapd · Mar 24, 12:22
+
+**Background**: Play Integrity API is Google's system to verify app authenticity and device integrity. GrapheneOS is a privacy-focused Android fork that removes Google services by design. The EU has been promoting digital sovereignty initiatives to reduce reliance on non-EU tech companies.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Play_Integrity_API">Play Integrity API - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GrapheneOS">GrapheneOS</a></li>
+<li><a href="https://grapheneos.org/">GrapheneOS: the private and secure mobile OS</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Developers and privacy advocates strongly oppose the move on GitHub, arguing it contradicts open-source principles and increases dependence on Google while excluding privacy-conscious users.
+
+**Tags**: `#EU Regulation`, `#Android`, `#Digital Sovereignty`, `#Privacy`, `#Open Source`
 
 ---
